@@ -55877,6 +55877,7 @@ MonoBehaviour:
   - {x: 12.79, y: 7, z: 0}
   - {x: 12.79, y: 4.83, z: 0}
   moveSpeed: 3
+  enemyName: 0
 --- !u!60 &1650603490
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -89843,6 +89844,10 @@ PrefabInstance:
     - target: {fileID: 3154154107164631817, guid: 6ecd373f91af2c644b310f324513e4d3, type: 3}
       propertyPath: m_Name
       value: warrior
+      objectReference: {fileID: 0}
+    - target: {fileID: 3832000177661274396, guid: 6ecd373f91af2c644b310f324513e4d3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5223756507936439044, guid: 6ecd373f91af2c644b310f324513e4d3, type: 3}
       propertyPath: speed
