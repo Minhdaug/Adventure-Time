@@ -1,0 +1,479 @@
+fileFormatVersion: 2
+guid: 1afbc286548db3d409e009359590225f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mage_f_fight-PhotoRoom.png-PhotoRoom_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 60.75
+        width: 18
+        height: 20.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1088ba8797022cd42b7f9f2ebde06c16
+      internalID: 445861125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mage_f_fight-PhotoRoom.png-PhotoRoom_1
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 60.75
+        width: 18
+        height: 20.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e44c0de65a6627f4a8e92258c5d6d3b1
+      internalID: -1174984763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mage_f_fight-PhotoRoom.png-PhotoRoom_2
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 60.75
+        width: 18
+        height: 20.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f124f7f6a2f03549875f94775e80b84
+      internalID: 693087456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mage_f_fight-PhotoRoom.png-PhotoRoom_3
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 60.75
+        width: 18
+        height: 20.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d7734a528af8a74caf65508ed87f370
+      internalID: 1083804033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mage_f_fight-PhotoRoom.png-PhotoRoom_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40.75
+        width: 18
+        height: 20.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e1ca66e8749fc04eba6c2188fba3f76
+      internalID: 1518567852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mage_f_fight-PhotoRoom.png-PhotoRoom_5
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 40.75
+        width: 18
+        height: 20.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 748fecb9aefe9074084ae58f83184b33
+      internalID: -422283871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mage_f_fight-PhotoRoom.png-PhotoRoom_6
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 40.75
+        width: 18
+        height: 20.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13ad0d22eb0fc0c4697848d447dbadbe
+      internalID: -803649719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mage_f_fight-PhotoRoom.png-PhotoRoom_7
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 40.75
+        width: 18
+        height: 20.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cf622884d3b0924883844b3945ce0e4
+      internalID: 1126265409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mage_f_fight-PhotoRoom.png-PhotoRoom_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 20.75
+        width: 18
+        height: 20.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30400c7a0b553e0419ddd93f502211b2
+      internalID: 800077047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mage_f_fight-PhotoRoom.png-PhotoRoom_9
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 20.75
+        width: 18
+        height: 20.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0b29d29346e7964ea25ef9d7aea1511
+      internalID: -341188364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mage_f_fight-PhotoRoom.png-PhotoRoom_10
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 20.75
+        width: 18
+        height: 20.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee74d69f3ef755a4b85e950651b60d25
+      internalID: -625024217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mage_f_fight-PhotoRoom.png-PhotoRoom_11
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 20.75
+        width: 18
+        height: 20.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90493f32aae508c49910cee9024b92b8
+      internalID: 95539298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mage_f_fight-PhotoRoom.png-PhotoRoom_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.75
+        width: 18
+        height: 20.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88313664481a4a44a84b1063c7825e2b
+      internalID: 475804674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mage_f_fight-PhotoRoom.png-PhotoRoom_13
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 0.75
+        width: 18
+        height: 20.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd3a9e81ba6825e46a7e4492d82b10bd
+      internalID: 483594391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mage_f_fight-PhotoRoom.png-PhotoRoom_14
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 0.75
+        width: 18
+        height: 20.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42ff6ceae65c40442b0ebe92646e0361
+      internalID: -1277815162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mage_f_fight-PhotoRoom.png-PhotoRoom_15
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 0.75
+        width: 18
+        height: 20.25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb8d28edd9eb5b408f621a7ae059692
+      internalID: 511591933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      mage_f_fight-PhotoRoom.png-PhotoRoom_0: 445861125
+      mage_f_fight-PhotoRoom.png-PhotoRoom_1: -1174984763
+      mage_f_fight-PhotoRoom.png-PhotoRoom_10: -625024217
+      mage_f_fight-PhotoRoom.png-PhotoRoom_11: 95539298
+      mage_f_fight-PhotoRoom.png-PhotoRoom_12: 475804674
+      mage_f_fight-PhotoRoom.png-PhotoRoom_13: 483594391
+      mage_f_fight-PhotoRoom.png-PhotoRoom_14: -1277815162
+      mage_f_fight-PhotoRoom.png-PhotoRoom_15: 511591933
+      mage_f_fight-PhotoRoom.png-PhotoRoom_2: 693087456
+      mage_f_fight-PhotoRoom.png-PhotoRoom_3: 1083804033
+      mage_f_fight-PhotoRoom.png-PhotoRoom_4: 1518567852
+      mage_f_fight-PhotoRoom.png-PhotoRoom_5: -422283871
+      mage_f_fight-PhotoRoom.png-PhotoRoom_6: -803649719
+      mage_f_fight-PhotoRoom.png-PhotoRoom_7: 1126265409
+      mage_f_fight-PhotoRoom.png-PhotoRoom_8: 800077047
+      mage_f_fight-PhotoRoom.png-PhotoRoom_9: -341188364
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
