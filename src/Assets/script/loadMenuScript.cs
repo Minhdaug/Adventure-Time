@@ -35,7 +35,7 @@ public class loadMenuScript : MonoBehaviour
             SaveFile = data;
             return true;
         }
-        catch (Exception e)
+        catch
         {
             return false;
         }
@@ -43,8 +43,9 @@ public class loadMenuScript : MonoBehaviour
 
     public void chooseSave(int saveSlot)
     {
-        if (saveSlot == 3) // 3 == newgame
+        if (saveSlot == 4) // 4 == newgame
         {
+            SaveFile = new SaveFile();
             SaveToStaticData();
             SceneManager.LoadScene("scene-1");
         }
@@ -65,13 +66,11 @@ public class loadMenuScript : MonoBehaviour
     {
         if (saveSlots.Count > 0)
         {
-            for (int i = 0; i < saveSlots.Count; i++)
+            for (int i = 1; i <= saveSlots.Count; i++)
             {
                 if (GetSaveFiles(i)) saveSlots[i].SetText($"{SaveFile.saveTime}");
-                else saveSlots[i].SetText($"Save File {i + 1}");
+                else saveSlots[i - 1].SetText($"Save File {i}");
             }
         }
-
-
     }
 }
