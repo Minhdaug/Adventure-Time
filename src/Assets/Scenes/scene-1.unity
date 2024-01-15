@@ -371,7 +371,7 @@ Transform:
   m_GameObject: {fileID: 194040957}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.501399, y: 9.97123, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -403,7 +403,7 @@ GameObject:
   - component: {fileID: 278001264}
   - component: {fileID: 278001263}
   m_Layer: 0
-  m_Name: Goblin (1)
+  m_Name: Enemy4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -422,8 +422,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints:
-  - {x: 13.04, y: 37.33, z: 0}
-  - {x: 13.04, y: 37.33, z: 0}
+  - {x: 15.3, y: 37, z: 0}
+  - {x: 12.5, y: 37, z: 0}
   moveSpeed: 3
   enemyName: 0
 --- !u!60 &278001264
@@ -461,8 +461,8 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.3266667}
-    oldSize: {x: 1.5, y: 1.5}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 0.64, y: 0.41}
     newSize: {x: 1.5, y: 1.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -470,25 +470,13 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.17, y: 0.19999991}
-      - {x: 0.12, y: 0.23999992}
-      - {x: 0.14999999, y: 0.3499999}
-      - {x: 0.049999997, y: 0.3799999}
-      - {x: -0.02, y: 0.3799999}
-      - {x: -0.11, y: 0.35999992}
-      - {x: -0.17999999, y: 0.23999992}
-      - {x: -0.19, y: 0.21999992}
-      - {x: -0.19, y: 0.15999992}
-      - {x: -0.16, y: 0.11999992}
-      - {x: -0.19, y: -0.010000076}
-      - {x: -0.14999999, y: -0.020000076}
-      - {x: 0.13, y: -0.020000076}
-      - {x: 0.17999999, y: 0.069999926}
-      - {x: 0.17999999, y: 0.18999992}
-    - - {x: -0.08, y: 0.17999992}
-      - {x: -0.07, y: 0.18999992}
-      - {x: -0.06, y: 0.17999992}
-      - {x: -0.08, y: 0.15999992}
+    - - {x: -0.06, y: 0.14}
+      - {x: -0.089999996, y: 0.13}
+      - {x: -0.089999996, y: 0.01}
+      - {x: -0.08, y: 0}
+      - {x: 0.099999994, y: 0}
+      - {x: 0.11, y: 0.02}
+      - {x: 0.11, y: 0.14}
   m_UseDelaunayMesh: 0
 --- !u!95 &278001265
 Animator:
@@ -500,7 +488,7 @@ Animator:
   m_GameObject: {fileID: 278001262}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d85490ec3f55d39488609771da7eb8e8, type: 2}
+  m_Controller: {fileID: 9100000, guid: ccd2b85295e8e214881c7e79c1767bab, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -549,10 +537,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1939551117
+  m_SortingLayer: 1
   m_SortingOrder: 2
-  m_Sprite: {fileID: -1054955228, guid: f84c06efa9991bd49b5553f54f400348, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 746f1add48c50ca4fa57d5cdd541d976, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -571,8 +559,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 278001262}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.731042, y: 30.591927, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12.5, y: 37, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -733,7 +721,7 @@ Transform:
   m_GameObject: {fileID: 312590982}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.0175667, y: 79.01516, z: 0}
+  m_LocalPosition: {x: 13.518966, y: 88.98639, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -880,7 +868,7 @@ GameObject:
   - component: {fileID: 487212855}
   - component: {fileID: 487212854}
   m_Layer: 0
-  m_Name: golem_sheet_0 (2)
+  m_Name: Enemy12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -982,9 +970,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints:
-  - {x: 25.39, y: 112.59, z: 0}
-  - {x: 27, y: 112.59, z: 0}
-  moveSpeed: 3
+  - {x: 30.73, y: 110.72, z: 0}
+  - {x: 30.73, y: 110.72, z: 0}
+  moveSpeed: 4
   enemyName: 0
 --- !u!212 &487212857
 SpriteRenderer:
@@ -1029,7 +1017,7 @@ SpriteRenderer:
   m_SortingOrder: 2
   m_Sprite: {fileID: 115744680, guid: d198e5e7e4d34b34c92189137483e6e8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 6.25, y: 6.25}
@@ -1047,8 +1035,8 @@ Transform:
   m_GameObject: {fileID: 487212853}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.081041, y: 105.85192, z: 0}
-  m_LocalScale: {x: 0.97002, y: 0.9027653, z: 1.0778}
+  m_LocalPosition: {x: 30.73, y: 110.72, z: 0}
+  m_LocalScale: {x: 1.3, y: 1.3, z: 1.0778}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1191659318}
@@ -1132,7 +1120,7 @@ Transform:
   m_GameObject: {fileID: 680816587}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.90892, y: 101.007324, z: 0}
+  m_LocalPosition: {x: -4.4075212, y: 110.97855, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1203,7 +1191,7 @@ GameObject:
   - component: {fileID: 908261103}
   - component: {fileID: 908261107}
   m_Layer: 0
-  m_Name: BringerOfDeath (1)
+  m_Name: Enemy14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1223,8 +1211,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waypoints:
   - {x: -2.86, y: 80.84, z: 0}
-  - {x: 0, y: 80.84, z: 0}
-  moveSpeed: 2
+  - {x: 4, y: 80.84, z: 0}
+  moveSpeed: 4
   enemyName: 0
 --- !u!95 &908261104
 Animator:
@@ -1236,7 +1224,7 @@ Animator:
   m_GameObject: {fileID: 908261102}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6a78333a521905d43b0313c1af9ecc8c, type: 2}
+  m_Controller: {fileID: 9100000, guid: ba9ec08722d661345b0e3f473877f1bd, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1288,7 +1276,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: -1604205190, guid: ae08794dee35c27408771a2e058a77b6, type: 3}
+  m_Sprite: {fileID: 4723107735738678597, guid: c1cdd26cc09ad224884556bc4d8296ae, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1308,7 +1296,7 @@ Transform:
   m_GameObject: {fileID: 908261102}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.168958, y: 74.10192, z: 0}
+  m_LocalPosition: {x: -2.8599997, y: 80.84, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1349,8 +1337,8 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.81, y: 0.92}
+    pivot: {x: 0.5, y: 0.3266667}
+    oldSize: {x: 1.5, y: 1.5}
     newSize: {x: 0.81, y: 0.92}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1358,28 +1346,26 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.055, y: 0.29}
-      - {x: 0.035, y: 0.37}
-      - {x: 0.044999998, y: 0.32999998}
-      - {x: 0.095, y: 0.28}
-      - {x: 0.175, y: 0.29999998}
-      - {x: 0.175, y: 0.41}
-      - {x: 0.13499999, y: 0.5}
-      - {x: -0.024999999, y: 0.7}
-      - {x: -0.125, y: 0.7}
-      - {x: -0.295, y: 0.47}
-      - {x: -0.295, y: 0.32}
-      - {x: -0.225, y: 0.13}
-      - {x: -0.195, y: 0.12}
-      - {x: 0.095, y: 0.12}
-      - {x: 0.114999995, y: 0.13}
-      - {x: 0.065, y: 0.28}
-    - - {x: -0.185, y: 0.44}
-      - {x: -0.175, y: 0.45}
-      - {x: -0.155, y: 0.42999998}
-      - {x: -0.16499999, y: 0.41}
-      - {x: -0.175, y: 0.41}
-      - {x: -0.185, y: 0.39999998}
+    - - {x: 0.17, y: 0.19999991}
+      - {x: 0.12, y: 0.23999992}
+      - {x: 0.14999999, y: 0.3499999}
+      - {x: 0.049999997, y: 0.3799999}
+      - {x: -0.02, y: 0.3799999}
+      - {x: -0.11, y: 0.35999992}
+      - {x: -0.17999999, y: 0.23999992}
+      - {x: -0.19, y: 0.21999992}
+      - {x: -0.19, y: 0.15999992}
+      - {x: -0.16, y: 0.11999992}
+      - {x: -0.19, y: -0.010000076}
+      - {x: -0.14999999, y: -0.020000076}
+      - {x: 0.13, y: -0.020000076}
+      - {x: 0.17999999, y: 0.069999926}
+      - {x: 0.17999999, y: 0.18999992}
+    - - {x: -0.08, y: 0.17999992}
+      - {x: -0.07, y: 0.18999992}
+      - {x: -0.06, y: 0.17999992}
+      - {x: -0.089999996, y: 0.15999992}
+      - {x: -0.08, y: 0.15999992}
   m_UseDelaunayMesh: 0
 --- !u!1 &913204730
 GameObject:
@@ -1395,7 +1381,7 @@ GameObject:
   - component: {fileID: 913204731}
   - component: {fileID: 913204735}
   m_Layer: 0
-  m_Name: BringerOfDeath (2)
+  m_Name: Enemy15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1414,9 +1400,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints:
-  - {x: 11.33, y: 76.63, z: 0}
-  - {x: 13, y: 76.63, z: 0}
-  moveSpeed: 2
+  - {x: 15, y: 72, z: 0}
+  - {x: 4, y: 72, z: 0}
+  moveSpeed: 4
   enemyName: 0
 --- !u!95 &913204732
 Animator:
@@ -1428,7 +1414,7 @@ Animator:
   m_GameObject: {fileID: 913204730}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6a78333a521905d43b0313c1af9ecc8c, type: 2}
+  m_Controller: {fileID: 9100000, guid: ba9ec08722d661345b0e3f473877f1bd, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1480,7 +1466,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: -1604205190, guid: ae08794dee35c27408771a2e058a77b6, type: 3}
+  m_Sprite: {fileID: 4723107735738678597, guid: c1cdd26cc09ad224884556bc4d8296ae, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1500,7 +1486,7 @@ Transform:
   m_GameObject: {fileID: 913204730}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.0210419, y: 69.89192, z: 0}
+  m_LocalPosition: {x: 4, y: 72, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1541,8 +1527,8 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.81, y: 0.92}
+    pivot: {x: 0.5, y: 0.3266667}
+    oldSize: {x: 1.5, y: 1.5}
     newSize: {x: 0.81, y: 0.92}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1550,28 +1536,26 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.055, y: 0.29}
-      - {x: 0.035, y: 0.37}
-      - {x: 0.044999998, y: 0.32999998}
-      - {x: 0.095, y: 0.28}
-      - {x: 0.175, y: 0.29999998}
-      - {x: 0.175, y: 0.41}
-      - {x: 0.13499999, y: 0.5}
-      - {x: -0.024999999, y: 0.7}
-      - {x: -0.125, y: 0.7}
-      - {x: -0.295, y: 0.47}
-      - {x: -0.295, y: 0.32}
-      - {x: -0.225, y: 0.13}
-      - {x: -0.195, y: 0.12}
-      - {x: 0.095, y: 0.12}
-      - {x: 0.114999995, y: 0.13}
-      - {x: 0.065, y: 0.28}
-    - - {x: -0.185, y: 0.44}
-      - {x: -0.175, y: 0.45}
-      - {x: -0.155, y: 0.42999998}
-      - {x: -0.16499999, y: 0.41}
-      - {x: -0.175, y: 0.41}
-      - {x: -0.185, y: 0.39999998}
+    - - {x: 0.17, y: 0.19999991}
+      - {x: 0.12, y: 0.23999992}
+      - {x: 0.14999999, y: 0.3499999}
+      - {x: 0.049999997, y: 0.3799999}
+      - {x: -0.02, y: 0.3799999}
+      - {x: -0.11, y: 0.35999992}
+      - {x: -0.17999999, y: 0.23999992}
+      - {x: -0.19, y: 0.21999992}
+      - {x: -0.19, y: 0.15999992}
+      - {x: -0.16, y: 0.11999992}
+      - {x: -0.19, y: -0.010000076}
+      - {x: -0.14999999, y: -0.020000076}
+      - {x: 0.13, y: -0.020000076}
+      - {x: 0.17999999, y: 0.069999926}
+      - {x: 0.17999999, y: 0.18999992}
+    - - {x: -0.08, y: 0.17999992}
+      - {x: -0.07, y: 0.18999992}
+      - {x: -0.06, y: 0.17999992}
+      - {x: -0.089999996, y: 0.15999992}
+      - {x: -0.08, y: 0.15999992}
   m_UseDelaunayMesh: 0
 --- !u!1 &919468063
 GameObject:
@@ -1836,7 +1820,7 @@ GameObject:
   - component: {fileID: 1017722802}
   - component: {fileID: 1017722801}
   m_Layer: 0
-  m_Name: Mushroom (1)
+  m_Name: Enemy2
   m_TagString: "Qu\xE1i"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1877,8 +1861,8 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.5, y: 1.5}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 0.64, y: 0.41}
     newSize: {x: 1.5, y: 1.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1886,13 +1870,13 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.08, y: 0.13}
-      - {x: -0.13, y: 0.13}
-      - {x: -0.13, y: -0.25}
-      - {x: -0.099999994, y: -0.28}
-      - {x: 0.099999994, y: -0.28}
-      - {x: 0.14, y: -0.17999999}
-      - {x: 0.14, y: 0.089999996}
+    - - {x: -0.06, y: 0.14}
+      - {x: -0.089999996, y: 0.13}
+      - {x: -0.089999996, y: 0.01}
+      - {x: -0.08, y: 0}
+      - {x: 0.099999994, y: 0}
+      - {x: 0.11, y: 0.02}
+      - {x: 0.11, y: 0.14}
   m_UseDelaunayMesh: 0
 --- !u!95 &1017722802
 Animator:
@@ -1904,7 +1888,7 @@ Animator:
   m_GameObject: {fileID: 1017722800}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3840b5880f4ad9542abe5c5312a38916, type: 2}
+  m_Controller: {fileID: 9100000, guid: ccd2b85295e8e214881c7e79c1767bab, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1973,7 +1957,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -7008412969330441016, guid: 5cdfcef2d5ef97347a8d7935407f81ab, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 746f1add48c50ca4fa57d5cdd541d976, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1993,7 +1977,7 @@ Transform:
   m_GameObject: {fileID: 1017722800}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.811043, y: 4.2019243, z: 0}
+  m_LocalPosition: {x: 26.12, y: 10.94, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2252,7 +2236,7 @@ Transform:
   m_GameObject: {fileID: 1034610861}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 6.501399, y: 9.97123, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2388,7 +2372,7 @@ Transform:
   m_GameObject: {fileID: 1077543680}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.998601, y: 65.98877, z: 0}
+  m_LocalPosition: {x: 15.5, y: 75.96, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2524,7 +2508,7 @@ Transform:
   m_GameObject: {fileID: 1080006643}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.951399, y: 61.008774, z: 0}
+  m_LocalPosition: {x: -6.45, y: 70.98, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -49293,7 +49277,7 @@ GameObject:
   - component: {fileID: 1168951093}
   - component: {fileID: 1168951095}
   m_Layer: 0
-  m_Name: SkeletonA
+  m_Name: Enemy8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49340,7 +49324,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 5bdd6c37d70a73048840f49b5f4c1587, type: 3}
+  m_Sprite: {fileID: 5189149705242216134, guid: 13e92c1d98e659941b362fa7c74445fa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -49360,8 +49344,8 @@ Transform:
   m_GameObject: {fileID: 1168951090}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.358958, y: 31.091927, z: 0}
-  m_LocalScale: {x: 4, y: 3, z: 1}
+  m_LocalPosition: {x: -3.3, y: 39, z: 0}
+  m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1191659318}
@@ -49379,8 +49363,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints:
-  - {x: -6, y: 37.83, z: 0}
-  - {x: -1, y: 37.83, z: 0}
+  - {x: 3, y: 39, z: 0}
+  - {x: -3.3, y: 39, z: 0}
   moveSpeed: 2
   enemyName: 0
 --- !u!95 &1168951094
@@ -49393,7 +49377,7 @@ Animator:
   m_GameObject: {fileID: 1168951090}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 37b9cfa0e5809a045ba032d93bd98864, type: 2}
+  m_Controller: {fileID: 9100000, guid: ec24e4ddfe3ded84495eefe4576cc9fe, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -49439,8 +49423,8 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.28, y: 0.96}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 0.64, y: 0.64}
     newSize: {x: 1.28, y: 0.96}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -49448,21 +49432,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.17999999, y: -0.32999998}
-      - {x: -0.17999999, y: -0.31}
-      - {x: -0.19, y: -0.45}
-      - {x: -0.19, y: -0.47}
-      - {x: -0.17999999, y: -0.48}
-      - {x: -0.099999994, y: -0.48}
-      - {x: -0.099999994, y: 0.089999996}
-      - {x: -0.13, y: 0.13}
-      - {x: -0.21, y: 0.13}
-      - {x: -0.32999998, y: -0.06}
-      - {x: -0.62, y: -0.47}
-      - {x: -0.62, y: -0.48}
-      - {x: -0.19, y: -0.48}
-      - {x: -0.19, y: -0.47}
-      - {x: -0.21, y: -0.41}
+    - - {x: 0.02, y: 0.39}
+      - {x: -0.11, y: 0.34}
+      - {x: -0.11, y: 0.24}
+      - {x: 0.099999994, y: 0.24}
+      - {x: 0.099999994, y: 0.35999998}
+      - {x: 0.07, y: 0.39}
   m_UseDelaunayMesh: 0
 --- !u!1 &1186441771
 GameObject:
@@ -49478,7 +49453,7 @@ GameObject:
   - component: {fileID: 1186441773}
   - component: {fileID: 1186441772}
   m_Layer: 0
-  m_Name: Mushroom (2)
+  m_Name: Enemy3
   m_TagString: "Qu\xE1i"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49519,8 +49494,8 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.5, y: 1.5}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 0.64, y: 0.41}
     newSize: {x: 1.5, y: 1.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -49528,13 +49503,13 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.08, y: 0.13}
-      - {x: -0.13, y: 0.13}
-      - {x: -0.13, y: -0.25}
-      - {x: -0.099999994, y: -0.28}
-      - {x: 0.099999994, y: -0.28}
-      - {x: 0.14, y: -0.17999999}
-      - {x: 0.14, y: 0.089999996}
+    - - {x: -0.06, y: 0.14}
+      - {x: -0.089999996, y: 0.13}
+      - {x: -0.089999996, y: 0.01}
+      - {x: -0.08, y: 0}
+      - {x: 0.099999994, y: 0}
+      - {x: 0.11, y: 0.02}
+      - {x: 0.11, y: 0.14}
   m_UseDelaunayMesh: 0
 --- !u!95 &1186441773
 Animator:
@@ -49546,7 +49521,7 @@ Animator:
   m_GameObject: {fileID: 1186441771}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3840b5880f4ad9542abe5c5312a38916, type: 2}
+  m_Controller: {fileID: 9100000, guid: ccd2b85295e8e214881c7e79c1767bab, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -49615,7 +49590,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -7008412969330441016, guid: 5cdfcef2d5ef97347a8d7935407f81ab, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 746f1add48c50ca4fa57d5cdd541d976, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -49635,7 +49610,7 @@ Transform:
   m_GameObject: {fileID: 1186441771}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.721043, y: 10.121925, z: 0}
+  m_LocalPosition: {x: 18.03, y: 16.86, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -57783,7 +57758,7 @@ Transform:
   m_GameObject: {fileID: 1191659316}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.308958, y: 6.7380753, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -58017,7 +57992,7 @@ Transform:
   m_GameObject: {fileID: 1265201537}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.0086012, y: 112.06877, z: 0}
+  m_LocalPosition: {x: 8.51, y: 122.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -58088,7 +58063,7 @@ GameObject:
   - component: {fileID: 1347201858}
   - component: {fileID: 1347201857}
   m_Layer: 0
-  m_Name: golem_sheet_0 (1)
+  m_Name: Enemy11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58129,8 +58104,8 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 6.25, y: 6.25}
+    pivot: {x: 0.5, y: 0.3266667}
+    oldSize: {x: 1.5, y: 1.5}
     newSize: {x: 6.25, y: 6.25}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -58138,23 +58113,26 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.5625, y: 2.3125}
-      - {x: 1.5625, y: 3.625}
-      - {x: 1.1875, y: 4.3125}
-      - {x: 0.125, y: 4.875}
-      - {x: 0, y: 4.875}
-      - {x: -0.5625, y: 4.3125}
-      - {x: -1.25, y: 4.3125}
-      - {x: -1.6875, y: 3.375}
-      - {x: -1.6875, y: 2}
-      - {x: -1.125, y: 1.75}
-      - {x: -0.9375, y: 2}
-      - {x: -0.75, y: 2.1875}
-      - {x: -0.125, y: 1.75}
-      - {x: 0.0625, y: 1.75}
-      - {x: 0.625, y: 2.3125}
-      - {x: 1, y: 1.9375}
-      - {x: 1.4375, y: 2.0625}
+    - - {x: 0.17, y: 0.19999991}
+      - {x: 0.12, y: 0.23999992}
+      - {x: 0.14999999, y: 0.3499999}
+      - {x: 0.049999997, y: 0.3799999}
+      - {x: -0.02, y: 0.3799999}
+      - {x: -0.11, y: 0.35999992}
+      - {x: -0.17999999, y: 0.23999992}
+      - {x: -0.19, y: 0.21999992}
+      - {x: -0.19, y: 0.15999992}
+      - {x: -0.16, y: 0.11999992}
+      - {x: -0.19, y: -0.010000076}
+      - {x: -0.14999999, y: -0.020000076}
+      - {x: 0.13, y: -0.020000076}
+      - {x: 0.17999999, y: 0.069999926}
+      - {x: 0.17999999, y: 0.18999992}
+    - - {x: -0.08, y: 0.17999992}
+      - {x: -0.07, y: 0.18999992}
+      - {x: -0.06, y: 0.17999992}
+      - {x: -0.089999996, y: 0.15999992}
+      - {x: -0.08, y: 0.15999992}
   m_UseDelaunayMesh: 0
 --- !u!95 &1347201858
 Animator:
@@ -58166,7 +58144,7 @@ Animator:
   m_GameObject: {fileID: 1347201856}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4afece7047f4a1b4d8d46661f975b69d, type: 2}
+  m_Controller: {fileID: 9100000, guid: ba9ec08722d661345b0e3f473877f1bd, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -58190,9 +58168,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints:
-  - {x: 24.11, y: 92.57, z: 0}
-  - {x: 22, y: 92.57, z: 0}
-  moveSpeed: 3
+  - {x: 24, y: 95, z: 0}
+  - {x: 15, y: 95, z: 0}
+  moveSpeed: 4
   enemyName: 0
 --- !u!212 &1347201860
 SpriteRenderer:
@@ -58235,7 +58213,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 115744680, guid: d198e5e7e4d34b34c92189137483e6e8, type: 3}
+  m_Sprite: {fileID: 4723107735738678597, guid: c1cdd26cc09ad224884556bc4d8296ae, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -58255,8 +58233,8 @@ Transform:
   m_GameObject: {fileID: 1347201856}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.801043, y: 85.801926, z: 0}
-  m_LocalScale: {x: 0.97002, y: 0.9027653, z: 1.0778}
+  m_LocalPosition: {x: 15, y: 95, z: 0}
+  m_LocalScale: {x: 5, y: 5, z: 1.0778}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1191659318}
@@ -58734,7 +58712,7 @@ Transform:
   m_GameObject: {fileID: 1475516957}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.038601, y: 45.07877, z: 0}
+  m_LocalPosition: {x: 13.54, y: 55.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -58803,8 +58781,9 @@ GameObject:
   - component: {fileID: 1543974937}
   - component: {fileID: 1543974936}
   - component: {fileID: 1543974939}
+  - component: {fileID: 1543974940}
   m_Layer: 0
-  m_Name: orc16x16_1 (2)
+  m_Name: Enemy7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58823,8 +58802,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints:
-  - {x: 0.77, y: 32.89, z: 0}
-  - {x: 2, y: 32.89, z: 0}
+  - {x: -3, y: 48.95, z: 0}
+  - {x: -6.56, y: 48.95, z: 0}
   moveSpeed: 2
   enemyName: 0
 --- !u!212 &1543974937
@@ -58868,7 +58847,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -120083517, guid: ff80d985b0590bf41a3eec58712e7022, type: 3}
+  m_Sprite: {fileID: 5189149705242216134, guid: 13e92c1d98e659941b362fa7c74445fa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -58888,8 +58867,8 @@ Transform:
   m_GameObject: {fileID: 1543974935}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.538958, y: 26.151924, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -6.56, y: 48.95, z: 0}
+  m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1191659318}
@@ -58929,8 +58908,8 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.5, y: 1.5}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 0.64, y: 0.64}
     newSize: {x: 1.5, y: 1.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -58938,14 +58917,34 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.0625, y: 0.5625}
-      - {x: -0.125, y: 0.5625}
-      - {x: -0.5, y: 0.125}
-      - {x: -0.5, y: -0.75}
-      - {x: 0.5, y: -0.75}
-      - {x: 0.5, y: 0.1875}
-      - {x: 0.375, y: 0.5}
+    - - {x: 0.02, y: 0.39}
+      - {x: -0.11, y: 0.34}
+      - {x: -0.11, y: 0.24}
+      - {x: 0.099999994, y: 0.24}
+      - {x: 0.099999994, y: 0.35999998}
+      - {x: 0.07, y: 0.39}
   m_UseDelaunayMesh: 0
+--- !u!95 &1543974940
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543974935}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ec24e4ddfe3ded84495eefe4576cc9fe, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1544920567
 GameObject:
   m_ObjectHideFlags: 0
@@ -59067,7 +59066,7 @@ GameObject:
   - component: {fileID: 1550925312}
   - component: {fileID: 1550925316}
   m_Layer: 0
-  m_Name: BringerOfDeath
+  m_Name: Enemy13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59086,9 +59085,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints:
-  - {x: 0.46, y: 66.06, z: 0}
-  - {x: 3, y: 66.06, z: 0}
-  moveSpeed: 2
+  - {x: 4, y: 66.28, z: 0}
+  - {x: -3.68, y: 66.28, z: 0}
+  moveSpeed: 4
   enemyName: 0
 --- !u!95 &1550925313
 Animator:
@@ -59100,7 +59099,7 @@ Animator:
   m_GameObject: {fileID: 1550925311}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6a78333a521905d43b0313c1af9ecc8c, type: 2}
+  m_Controller: {fileID: 9100000, guid: ba9ec08722d661345b0e3f473877f1bd, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -59152,7 +59151,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: -1604205190, guid: ae08794dee35c27408771a2e058a77b6, type: 3}
+  m_Sprite: {fileID: 4723107735738678597, guid: c1cdd26cc09ad224884556bc4d8296ae, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -59172,7 +59171,7 @@ Transform:
   m_GameObject: {fileID: 1550925311}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.848958, y: 59.321922, z: 0}
+  m_LocalPosition: {x: -3.68, y: 66.28, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -59213,8 +59212,8 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.81, y: 0.92}
+    pivot: {x: 0.5, y: 0.3266667}
+    oldSize: {x: 1.5, y: 1.5}
     newSize: {x: 0.81, y: 0.92}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -59222,28 +59221,26 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.055, y: 0.29}
-      - {x: 0.035, y: 0.37}
-      - {x: 0.044999998, y: 0.32999998}
-      - {x: 0.095, y: 0.28}
-      - {x: 0.175, y: 0.29999998}
-      - {x: 0.175, y: 0.41}
-      - {x: 0.13499999, y: 0.5}
-      - {x: -0.024999999, y: 0.7}
-      - {x: -0.125, y: 0.7}
-      - {x: -0.295, y: 0.47}
-      - {x: -0.295, y: 0.32}
-      - {x: -0.225, y: 0.13}
-      - {x: -0.195, y: 0.12}
-      - {x: 0.095, y: 0.12}
-      - {x: 0.114999995, y: 0.13}
-      - {x: 0.065, y: 0.28}
-    - - {x: -0.185, y: 0.44}
-      - {x: -0.175, y: 0.45}
-      - {x: -0.155, y: 0.42999998}
-      - {x: -0.16499999, y: 0.41}
-      - {x: -0.175, y: 0.41}
-      - {x: -0.185, y: 0.39999998}
+    - - {x: 0.17, y: 0.19999991}
+      - {x: 0.12, y: 0.23999992}
+      - {x: 0.14999999, y: 0.3499999}
+      - {x: 0.049999997, y: 0.3799999}
+      - {x: -0.02, y: 0.3799999}
+      - {x: -0.11, y: 0.35999992}
+      - {x: -0.17999999, y: 0.23999992}
+      - {x: -0.19, y: 0.21999992}
+      - {x: -0.19, y: 0.15999992}
+      - {x: -0.16, y: 0.11999992}
+      - {x: -0.19, y: -0.010000076}
+      - {x: -0.14999999, y: -0.020000076}
+      - {x: 0.13, y: -0.020000076}
+      - {x: 0.17999999, y: 0.069999926}
+      - {x: 0.17999999, y: 0.18999992}
+    - - {x: -0.08, y: 0.17999992}
+      - {x: -0.07, y: 0.18999992}
+      - {x: -0.06, y: 0.17999992}
+      - {x: -0.089999996, y: 0.15999992}
+      - {x: -0.08, y: 0.15999992}
   m_UseDelaunayMesh: 0
 --- !u!1 &1553161331
 GameObject:
@@ -59324,7 +59321,7 @@ Transform:
   m_GameObject: {fileID: 1553161331}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22.990715, y: 52.9973, z: 0}
+  m_LocalPosition: {x: 29.492115, y: 62.96853, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -59663,7 +59660,7 @@ GameObject:
   - component: {fileID: 1711957592}
   - component: {fileID: 1711957591}
   m_Layer: 0
-  m_Name: Goblin (2)
+  m_Name: Enemy5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59682,8 +59679,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints:
-  - {x: 27.04, y: 46.66, z: 0}
-  - {x: 27.04, y: 46.66, z: 0}
+  - {x: 28, y: 43, z: 0}
+  - {x: 22, y: 43, z: 0}
   moveSpeed: 3
   enemyName: 0
 --- !u!60 &1711957592
@@ -59721,8 +59718,8 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.3266667}
-    oldSize: {x: 1.5, y: 1.5}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 0.64, y: 0.64}
     newSize: {x: 1.5, y: 1.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -59730,25 +59727,15 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.17, y: 0.19999991}
-      - {x: 0.12, y: 0.23999992}
-      - {x: 0.14999999, y: 0.3499999}
-      - {x: 0.049999997, y: 0.3799999}
-      - {x: -0.02, y: 0.3799999}
-      - {x: -0.11, y: 0.35999992}
-      - {x: -0.17999999, y: 0.23999992}
-      - {x: -0.19, y: 0.21999992}
-      - {x: -0.19, y: 0.15999992}
-      - {x: -0.16, y: 0.11999992}
-      - {x: -0.19, y: -0.010000076}
-      - {x: -0.14999999, y: -0.020000076}
-      - {x: 0.13, y: -0.020000076}
-      - {x: 0.17999999, y: 0.069999926}
-      - {x: 0.17999999, y: 0.18999992}
-    - - {x: -0.08, y: 0.17999992}
-      - {x: -0.07, y: 0.18999992}
-      - {x: -0.06, y: 0.17999992}
-      - {x: -0.08, y: 0.15999992}
+    - - {x: 0.04, y: 0.37}
+      - {x: -0.099999994, y: 0.31}
+      - {x: -0.099999994, y: 0.26999998}
+      - {x: -0.04, y: 0.22}
+      - {x: 0.02, y: 0.22}
+      - {x: 0.099999994, y: 0.24}
+      - {x: 0.11, y: 0.26}
+      - {x: 0.11, y: 0.32999998}
+      - {x: 0.07, y: 0.37}
   m_UseDelaunayMesh: 0
 --- !u!95 &1711957593
 Animator:
@@ -59760,7 +59747,7 @@ Animator:
   m_GameObject: {fileID: 1711957590}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d85490ec3f55d39488609771da7eb8e8, type: 2}
+  m_Controller: {fileID: 9100000, guid: ec24e4ddfe3ded84495eefe4576cc9fe, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -59812,7 +59799,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -1054955228, guid: f84c06efa9991bd49b5553f54f400348, type: 3}
+  m_Sprite: {fileID: -6885433733598600802, guid: 13e92c1d98e659941b362fa7c74445fa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -59832,7 +59819,7 @@ Transform:
   m_GameObject: {fileID: 1711957590}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 17.731043, y: 39.921925, z: 0}
+  m_LocalPosition: {x: 22, y: 43, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -59917,7 +59904,7 @@ Transform:
   m_GameObject: {fileID: 1766484153}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 24.0173, y: 37.070114, z: 0}
+  m_LocalPosition: {x: 30.5187, y: 47.041344, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -60053,7 +60040,7 @@ Transform:
   m_GameObject: {fileID: 1806597919}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.013399, y: 29.997772, z: 0}
+  m_LocalPosition: {x: -5.512, y: 39.969, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -60189,7 +60176,7 @@ Transform:
   m_GameObject: {fileID: 1867578996}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.991399, y: -0.99123, z: 0}
+  m_LocalPosition: {x: -5.49, y: 8.98, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -60394,7 +60381,7 @@ GameObject:
   - component: {fileID: 1983220131}
   - component: {fileID: 1983220132}
   m_Layer: 0
-  m_Name: Goblin
+  m_Name: Enemy6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60441,7 +60428,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -1054955228, guid: f84c06efa9991bd49b5553f54f400348, type: 3}
+  m_Sprite: {fileID: 5189149705242216134, guid: 13e92c1d98e659941b362fa7c74445fa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -60461,7 +60448,7 @@ Transform:
   m_GameObject: {fileID: 1983220127}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.611042, y: 24.591925, z: 0}
+  m_LocalPosition: {x: 22.92, y: 31.33, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -60477,7 +60464,7 @@ Animator:
   m_GameObject: {fileID: 1983220127}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d85490ec3f55d39488609771da7eb8e8, type: 2}
+  m_Controller: {fileID: 9100000, guid: ec24e4ddfe3ded84495eefe4576cc9fe, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -60523,8 +60510,8 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.3266667}
-    oldSize: {x: 1.5, y: 1.5}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 0.64, y: 0.64}
     newSize: {x: 1.5, y: 1.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -60532,25 +60519,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.17, y: 0.19999991}
-      - {x: 0.12, y: 0.23999992}
-      - {x: 0.14999999, y: 0.3499999}
-      - {x: 0.049999997, y: 0.3799999}
-      - {x: -0.02, y: 0.3799999}
-      - {x: -0.11, y: 0.35999992}
-      - {x: -0.17999999, y: 0.23999992}
-      - {x: -0.19, y: 0.21999992}
-      - {x: -0.19, y: 0.15999992}
-      - {x: -0.16, y: 0.11999992}
-      - {x: -0.19, y: -0.010000076}
-      - {x: -0.14999999, y: -0.020000076}
-      - {x: 0.13, y: -0.020000076}
-      - {x: 0.17999999, y: 0.069999926}
-      - {x: 0.17999999, y: 0.18999992}
-    - - {x: -0.08, y: 0.17999992}
-      - {x: -0.07, y: 0.18999992}
-      - {x: -0.06, y: 0.17999992}
-      - {x: -0.08, y: 0.15999992}
+    - - {x: 0.02, y: 0.39}
+      - {x: -0.11, y: 0.34}
+      - {x: -0.11, y: 0.24}
+      - {x: 0.099999994, y: 0.24}
+      - {x: 0.099999994, y: 0.35999998}
+      - {x: 0.07, y: 0.39}
   m_UseDelaunayMesh: 0
 --- !u!114 &1983220132
 MonoBehaviour:
@@ -60565,7 +60539,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints:
-  - {x: 22.92, y: 31.33, z: 0}
+  - {x: 15, y: 31.33, z: 0}
   - {x: 22.92, y: 31.33, z: 0}
   moveSpeed: 3
   enemyName: 0
@@ -97007,7 +96981,7 @@ Transform:
   m_GameObject: {fileID: 2073838441}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.986491, y: 2.9864836, z: 0}
+  m_LocalPosition: {x: 22.48789, y: 12.957713, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -97079,7 +97053,7 @@ GameObject:
   - component: {fileID: 2091574457}
   - component: {fileID: 2091574458}
   m_Layer: 0
-  m_Name: golem_sheet_0
+  m_Name: Enemy10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97126,7 +97100,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 115744680, guid: d198e5e7e4d34b34c92189137483e6e8, type: 3}
+  m_Sprite: {fileID: 4723107735738678597, guid: c1cdd26cc09ad224884556bc4d8296ae, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -97146,8 +97120,8 @@ Transform:
   m_GameObject: {fileID: 2091574453}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.758958, y: 86.92193, z: 0}
-  m_LocalScale: {x: 0.97002, y: 0.9027653, z: 1.0778}
+  m_LocalPosition: {x: -6, y: 97.66, z: 0}
+  m_LocalScale: {x: 5, y: 5, z: 1.0778}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1191659318}
@@ -97165,9 +97139,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints:
-  - {x: -5, y: 93.66, z: 0}
-  - {x: -3, y: 93.66, z: 0}
-  moveSpeed: 3
+  - {x: 1, y: 97.66, z: 0}
+  - {x: -6, y: 97.66, z: 0}
+  moveSpeed: 4
   enemyName: 0
 --- !u!95 &2091574457
 Animator:
@@ -97179,7 +97153,7 @@ Animator:
   m_GameObject: {fileID: 2091574453}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4afece7047f4a1b4d8d46661f975b69d, type: 2}
+  m_Controller: {fileID: 9100000, guid: ba9ec08722d661345b0e3f473877f1bd, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -97225,8 +97199,8 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 6.25, y: 6.25}
+    pivot: {x: 0.5, y: 0.3266667}
+    oldSize: {x: 1.5, y: 1.5}
     newSize: {x: 6.25, y: 6.25}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -97234,23 +97208,26 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.5625, y: 2.3125}
-      - {x: 1.5625, y: 3.625}
-      - {x: 1.1875, y: 4.3125}
-      - {x: 0.125, y: 4.875}
-      - {x: 0, y: 4.875}
-      - {x: -0.5625, y: 4.3125}
-      - {x: -1.25, y: 4.3125}
-      - {x: -1.6875, y: 3.375}
-      - {x: -1.6875, y: 2}
-      - {x: -1.125, y: 1.75}
-      - {x: -0.9375, y: 2}
-      - {x: -0.75, y: 2.1875}
-      - {x: -0.125, y: 1.75}
-      - {x: 0.0625, y: 1.75}
-      - {x: 0.625, y: 2.3125}
-      - {x: 1, y: 1.9375}
-      - {x: 1.4375, y: 2.0625}
+    - - {x: 0.17, y: 0.19999991}
+      - {x: 0.12, y: 0.23999992}
+      - {x: 0.14999999, y: 0.3499999}
+      - {x: 0.049999997, y: 0.3799999}
+      - {x: -0.02, y: 0.3799999}
+      - {x: -0.11, y: 0.35999992}
+      - {x: -0.17999999, y: 0.23999992}
+      - {x: -0.19, y: 0.21999992}
+      - {x: -0.19, y: 0.15999992}
+      - {x: -0.16, y: 0.11999992}
+      - {x: -0.19, y: -0.010000076}
+      - {x: -0.14999999, y: -0.020000076}
+      - {x: 0.13, y: -0.020000076}
+      - {x: 0.17999999, y: 0.069999926}
+      - {x: 0.17999999, y: 0.18999992}
+    - - {x: -0.08, y: 0.17999992}
+      - {x: -0.07, y: 0.18999992}
+      - {x: -0.06, y: 0.17999992}
+      - {x: -0.089999996, y: 0.15999992}
+      - {x: -0.08, y: 0.15999992}
   m_UseDelaunayMesh: 0
 --- !u!1 &2095955857
 GameObject:
@@ -97360,7 +97337,7 @@ GameObject:
   - component: {fileID: 2097847731}
   - component: {fileID: 2097847733}
   m_Layer: 0
-  m_Name: GhoulWarrior
+  m_Name: Enemy9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97407,7 +97384,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 4781dec62b11ffb4a9f3cca005d6ab57, type: 3}
+  m_Sprite: {fileID: 4723107735738678597, guid: c1cdd26cc09ad224884556bc4d8296ae, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -97427,7 +97404,7 @@ Transform:
   m_GameObject: {fileID: 2097847728}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.181042, y: 59.631927, z: 0}
+  m_LocalPosition: {x: 16, y: 64.33, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -97446,9 +97423,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints:
-  - {x: 18.49, y: 66.37, z: 0}
-  - {x: 22, y: 66.37, z: 0}
-  moveSpeed: 3
+  - {x: 30, y: 64.33, z: 0}
+  - {x: 16, y: 64.33, z: 0}
+  moveSpeed: 4
   enemyName: 0
 --- !u!95 &2097847732
 Animator:
@@ -97460,7 +97437,7 @@ Animator:
   m_GameObject: {fileID: 2097847728}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 48f077c1e2c6b194ba5b1943297ef34b, type: 2}
+  m_Controller: {fileID: 9100000, guid: ba9ec08722d661345b0e3f473877f1bd, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -97506,8 +97483,8 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.28, y: 0.96}
+    pivot: {x: 0.5, y: 0.3266667}
+    oldSize: {x: 1.5, y: 1.5}
     newSize: {x: 1.28, y: 0.96}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -97515,25 +97492,26 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.19999999, y: -0.31}
-      - {x: -0.19, y: -0.48}
-      - {x: -0.099999994, y: -0.48}
-      - {x: -0.03, y: -0.29999998}
-      - {x: 0.37, y: -0.29999998}
-      - {x: 0.38, y: -0.29}
-      - {x: 0.38, y: -0.25}
-      - {x: 0.099999994, y: -0.16}
-      - {x: -0.06, y: -0.19999999}
-      - {x: -0.07, y: -0.07}
-      - {x: -0.099999994, y: 0.11}
-      - {x: -0.17999999, y: 0.11}
-      - {x: -0.32999998, y: 0}
-      - {x: -0.42, y: -0.17}
-      - {x: -0.42, y: -0.28}
-      - {x: -0.31, y: -0.48}
-      - {x: -0.22999999, y: -0.48}
-      - {x: -0.22999999, y: -0.38}
-      - {x: -0.19, y: -0.34}
+    - - {x: 0.17, y: 0.19999991}
+      - {x: 0.12, y: 0.23999992}
+      - {x: 0.14999999, y: 0.3499999}
+      - {x: 0.049999997, y: 0.3799999}
+      - {x: -0.02, y: 0.3799999}
+      - {x: -0.11, y: 0.35999992}
+      - {x: -0.17999999, y: 0.23999992}
+      - {x: -0.19, y: 0.21999992}
+      - {x: -0.19, y: 0.15999992}
+      - {x: -0.16, y: 0.11999992}
+      - {x: -0.19, y: -0.010000076}
+      - {x: -0.14999999, y: -0.020000076}
+      - {x: 0.13, y: -0.020000076}
+      - {x: 0.17999999, y: 0.069999926}
+      - {x: 0.17999999, y: 0.18999992}
+    - - {x: -0.08, y: 0.17999992}
+      - {x: -0.07, y: 0.18999992}
+      - {x: -0.06, y: 0.17999992}
+      - {x: -0.089999996, y: 0.15999992}
+      - {x: -0.08, y: 0.15999992}
   m_UseDelaunayMesh: 0
 --- !u!1 &2135581685
 GameObject:
@@ -97549,7 +97527,7 @@ GameObject:
   - component: {fileID: 2135581689}
   - component: {fileID: 2135581690}
   m_Layer: 0
-  m_Name: Mushroom
+  m_Name: Enemy1
   m_TagString: "Qu\xE1i"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97596,7 +97574,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -7008412969330441016, guid: 5cdfcef2d5ef97347a8d7935407f81ab, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 746f1add48c50ca4fa57d5cdd541d976, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -97616,7 +97594,7 @@ Transform:
   m_GameObject: {fileID: 2135581685}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.048958, y: 4.2519245, z: 0}
+  m_LocalPosition: {x: -1.7399998, y: 10.99, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -97649,7 +97627,7 @@ Animator:
   m_GameObject: {fileID: 2135581685}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3840b5880f4ad9542abe5c5312a38916, type: 2}
+  m_Controller: {fileID: 9100000, guid: ccd2b85295e8e214881c7e79c1767bab, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -97695,8 +97673,8 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.5, y: 1.5}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 0.64, y: 0.41}
     newSize: {x: 1.5, y: 1.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -97704,13 +97682,13 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.08, y: 0.13}
-      - {x: -0.13, y: 0.13}
-      - {x: -0.13, y: -0.25}
-      - {x: -0.099999994, y: -0.28}
-      - {x: 0.099999994, y: -0.28}
-      - {x: 0.14, y: -0.17999999}
-      - {x: 0.14, y: 0.089999996}
+    - - {x: -0.06, y: 0.14}
+      - {x: -0.089999996, y: 0.13}
+      - {x: -0.089999996, y: 0.01}
+      - {x: -0.08, y: 0}
+      - {x: 0.099999994, y: 0}
+      - {x: 0.11, y: 0.02}
+      - {x: 0.11, y: 0.14}
   m_UseDelaunayMesh: 0
 --- !u!222 &4860037984720749
 CanvasRenderer:
@@ -102799,7 +102777,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -84041801
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 441647835569fb741b89848ee0d32eda, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -107447,7 +107425,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -84041801
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f9d48470cf97eba4dbe7dfc6f974385c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -108133,7 +108111,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -84041801
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: f9d48470cf97eba4dbe7dfc6f974385c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -109452,7 +109430,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -84041801
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 441647835569fb741b89848ee0d32eda, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -109968,7 +109946,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -84041801
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 6
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -111090,7 +111068,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -84041801
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: 441647835569fb741b89848ee0d32eda, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

@@ -42,6 +42,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Enemy Object
+    uniqueID: 2355416179
+    locked: 0
   - name: CanvasUI
     uniqueID: 4210925495
     locked: 0
