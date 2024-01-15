@@ -9,9 +9,9 @@ namespace Assets.script.defaultData
 {
     public class CharacterDefaultSkill
     {
-        public List<Skill> warriorUnobtained = new List<Skill>()
+        public List<SkillModel> warriorUnobtained = new List<SkillModel>()
         {
-            new Skill()
+            new SkillModel()
             {
                 name = "Heal 1",
                 power = 0,
@@ -25,7 +25,7 @@ namespace Assets.script.defaultData
                 isTargetEnemy = false,
                 remainTurn = 0,
             },
-            new Skill()
+            new SkillModel()
             {
                 name = "Defend Buff",
                 power = 0,
@@ -39,7 +39,7 @@ namespace Assets.script.defaultData
                 isTargetEnemy = false,
                 remainTurn = 3,
             },
-            new Skill()
+            new SkillModel()
             {
                 name = "Super Slash 2",
                 power = 70,
@@ -53,7 +53,7 @@ namespace Assets.script.defaultData
                 isTargetEnemy = true,
                 remainTurn = 0,
             },
-            new Skill()
+            new SkillModel()
             {
                 name = "Regeneration 1",
                 power = 0,
@@ -67,7 +67,7 @@ namespace Assets.script.defaultData
                 isTargetEnemy = false,
                 remainTurn = 999,
             },
-            new Skill()
+            new SkillModel()
             {
                 name = "Super Slash 3",
                 power = 90,
@@ -81,7 +81,7 @@ namespace Assets.script.defaultData
                 isTargetEnemy = true,
                 remainTurn = 0,
             },
-            new Skill()
+            new SkillModel()
             {
                 name = "Toxic 3",
                 power = 90,
@@ -95,7 +95,7 @@ namespace Assets.script.defaultData
                 isTargetEnemy = false,
                 remainTurn = 0,
             },
-            new Skill()
+            new SkillModel()
             {
                 name = "defend buff plus",
                 power = 0,
@@ -109,7 +109,7 @@ namespace Assets.script.defaultData
                 isTargetEnemy = false,
                 remainTurn = 3,
             },
-            new Skill()
+            new SkillModel()
             {
                 name = "Regeneration 2",
                 power = 0,
@@ -123,7 +123,7 @@ namespace Assets.script.defaultData
                 isTargetEnemy = false,
                 remainTurn = 999,
             },
-            new Skill()
+            new SkillModel()
             {
                 name = "super slash 4",
                 power = 100,
@@ -139,9 +139,9 @@ namespace Assets.script.defaultData
             },
         };
 
-        public List<Skill> mageUnobtained = new List<Skill>()
+        public List<SkillModel> mageUnobtained = new List<SkillModel>()
         {
-            new Skill()
+            new SkillModel()
             {
                 name = "Water 1",
                 power = 40,
@@ -155,7 +155,7 @@ namespace Assets.script.defaultData
                 isTargetEnemy = true,
                 remainTurn = 0,
             },
-            new Skill()
+            new SkillModel()
             {
                 name = "Fire 2",
                 power = 40,
@@ -169,7 +169,7 @@ namespace Assets.script.defaultData
                 isTargetEnemy = true,
                 remainTurn = 0,
             },
-            new Skill()
+            new SkillModel()
             {
                 name = "water 2",
                 power = 40,
@@ -183,7 +183,7 @@ namespace Assets.script.defaultData
                 isTargetEnemy = true,
                 remainTurn = 0,
             },
-            new Skill()
+            new SkillModel()
             {
                 name = "Invigoration 1",
                 power = 0,
@@ -197,7 +197,7 @@ namespace Assets.script.defaultData
                 isTargetEnemy = false,
                 remainTurn = 999,
             },
-            new Skill()
+            new SkillModel()
             {
                 name = "Fire 3",
                 power = 90,
@@ -211,7 +211,7 @@ namespace Assets.script.defaultData
                 isTargetEnemy = true,
                 remainTurn = 0,
             },
-            new Skill()
+            new SkillModel()
             {
                 name = "Water 3",
                 power = 90,
@@ -225,7 +225,7 @@ namespace Assets.script.defaultData
                 isTargetEnemy = true,
                 remainTurn = 0,
             },
-            new Skill()
+            new SkillModel()
             {
                 name = "Invigoration 2",
                 power = 0,
@@ -239,7 +239,7 @@ namespace Assets.script.defaultData
                 isTargetEnemy = false,
                 remainTurn = 999,
             },
-            new Skill()
+            new SkillModel()
             {
                 name = "Fire 4",
                 power = 90,
@@ -253,7 +253,7 @@ namespace Assets.script.defaultData
                 isTargetEnemy = true,
                 remainTurn = 0,
             },
-            new Skill()
+            new SkillModel()
             {
                 name = "Fire 4",
                 power = 90,
@@ -269,9 +269,9 @@ namespace Assets.script.defaultData
             },
         };
 
-        public List<Skill> witchUnobtained = new List<Skill>()
+        public List<SkillModel> witchUnobtained = new List<SkillModel>()
         {
-            new Skill()
+            new SkillModel()
             {
                 name = "toxic 1",
                 power = 40,
@@ -285,7 +285,7 @@ namespace Assets.script.defaultData
                 isTargetEnemy = true,
                 remainTurn = 0,
             },
-            new Skill()
+            new SkillModel()
             {
                 name = "Attack Buff",
                 power = 0,
@@ -299,7 +299,7 @@ namespace Assets.script.defaultData
                 isTargetEnemy = false,
                 remainTurn = 3,
             },
-            new Skill()
+            new SkillModel()
             {
                 name = "Heal 2",
                 power = 0,
@@ -313,7 +313,7 @@ namespace Assets.script.defaultData
                 isTargetEnemy = true,
                 remainTurn = 0,
             },
-            new Skill()
+            new SkillModel()
             {
                 name = "Invigoration 1",
                 power = 0,
@@ -327,7 +327,7 @@ namespace Assets.script.defaultData
                 isTargetEnemy = false,
                 remainTurn = 999,
             },
-            new Skill()
+            new SkillModel()
             {
                 name = "Toxic 2",
                 power = 40,
@@ -341,7 +341,7 @@ namespace Assets.script.defaultData
                 isTargetEnemy = true,
                 remainTurn = 0,
             },
-            new Skill()
+            new SkillModel()
             {
                 name = "Heal 3",
                 power = 0,
@@ -355,7 +355,7 @@ namespace Assets.script.defaultData
                 isTargetEnemy = false,
                 remainTurn = 0,
             },
-            new Skill()
+            new SkillModel()
             {
                 name = "Attack buff plus",
                 power = 0,
@@ -369,7 +369,7 @@ namespace Assets.script.defaultData
                 isTargetEnemy = false,
                 remainTurn = 3,
             },
-            new Skill()
+            new SkillModel()
             {
                 name = "Invigoration 2",
                 power = 0,
@@ -383,7 +383,7 @@ namespace Assets.script.defaultData
                 isTargetEnemy = false,
                 remainTurn = 999,
             },
-            new Skill()
+            new SkillModel()
             {
                 name = "Heal 4",
                 power = 100,

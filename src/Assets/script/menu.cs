@@ -36,7 +36,7 @@ public class menu : MonoBehaviour
 
     // skill
     public List<TextMeshProUGUI> SkillNameDescription; // 0 == name, 1 == description
-    private Skill selectedSkill;
+    private SkillModel selectedSkill;
 
     public GameObject player;
 

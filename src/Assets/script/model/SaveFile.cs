@@ -28,9 +28,9 @@ namespace Assets.script.model
                 defStat = 0f,
                 equippedWeapon = "Warrior sword 1",
                 equippedArmor = "Warrior Armor 1",
-                skills = new List<Skill>
+                skills = new List<SkillModel>
                 {
-                    new Skill()
+                    new SkillModel()
                     {
                         name = "Super Slash 1",
                         power = 65,
@@ -64,9 +64,9 @@ namespace Assets.script.model
                 defStat = 20f,
                 equippedWeapon = "Spellcaster scepter 1",
                 equippedArmor = "Spellcaster Armor 1",
-                skills = new List<Skill>
+                skills = new List<SkillModel>
                 {
-                    new Skill()
+                    new SkillModel()
                     {
                         name = "Fire 1",
                         power = 40,
@@ -100,9 +100,9 @@ namespace Assets.script.model
                 defStat = 20f,
                 equippedWeapon = "Spellcaster scepter 1",
                 equippedArmor = "Spellcaster Armor 1",
-                skills = new List<Skill>
+                skills = new List<SkillModel>
                 {
-                    new Skill()
+                    new SkillModel()
                     {
                         name = "Heal 1",
                         power = 0,

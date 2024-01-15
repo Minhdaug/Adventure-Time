@@ -22,7 +22,7 @@ public class HealPoint : MonoBehaviour
                 character.currHp = character.maxHp;
                 character.currMp = character.maxMp;
             }
-            foreach (Enemy enemy in saveFile.mapData.enemyList)
+            foreach (EnemyModel enemy in saveFile.mapData.enemyList)
             {
                 enemy.isAlive = true;
             }

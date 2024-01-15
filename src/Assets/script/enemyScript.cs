@@ -78,7 +78,7 @@ void RotateTowardsOppositeDirection()
         if (collision.gameObject.tag == "Player")
         {
 
-            SceneManager.LoadScene("Combat");
+            SceneManager.LoadScene("TestCombat");
         }
 
     }

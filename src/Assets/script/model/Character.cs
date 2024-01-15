@@ -27,7 +27,7 @@ namespace Assets.script.model
         public float defStat = 20f;
         public string equippedWeapon;
         public string equippedArmor;
-        public List<Skill> skills;
-        public List<Skill> unobtainedSkills;
+        public List<SkillModel> skills;
+        public List<SkillModel> unobtainedSkills;
     }
 }

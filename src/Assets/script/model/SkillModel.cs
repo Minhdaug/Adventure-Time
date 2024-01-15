@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assets.script.model
 {
-    public class Skill
+    public class SkillModel
     {
         public string name;
         public string description;

@@ -13,7 +13,7 @@ namespace Assets.script.model
         Harpy
     }
 
-    public class Enemy
+    public class EnemyModel
     {
         public int id;
         public EnemyName name;
