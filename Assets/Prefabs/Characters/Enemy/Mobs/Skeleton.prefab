@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8879328521660297515}
   - component: {fileID: 5640886858315385095}
   - component: {fileID: -3997172086013151156}
+  - component: {fileID: 4083691520757798109}
   m_Layer: 0
   m_Name: Skeleton
   m_TagString: Untagged
@@ -107,3 +108,28 @@ MonoBehaviour:
   _characterElemType: 1
   _selectionFrame: {fileID: 2407623222020858175, guid: ebac799ad22de79449f9f55e9ed24df6, type: 3}
   _speedFrame: {fileID: 4973852250365489966, guid: 0aedd4c49ee753846b49651d5f8df8c9, type: 3}
+  _isAttackBuff: 0
+  _attackBuffCount: 0
+  _isDefenseBuff: 0
+  _defenseBuffCount: 0
+--- !u!95 &4083691520757798109
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9037406505362164820}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cb2b6161579c4e046bd60f8b6b69ebc6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

@@ -21,53 +21,59 @@ public abstract class Unit : MonoBehaviour
 		set { _unitName = value; }
 	}
 	private int _currentHealth;
-	protected int CurrentHealth { 
+	public int CurrentHealth { 
 		get { return _currentHealth; }
 		set { _currentHealth = value; }
 	}
 	[SerializeField] int _initialHealth;
-	protected int InitialHealth
+	public int InitialHealth
 	{
 		get { return _initialHealth; }
 		set { _initialHealth = value; }
 	}
 	private int _currentMana;
-	protected int CurrentMana
+	public int CurrentMana
 	{
 		get { return _currentMana; }
 		set { _currentMana = value; }
 	}
 	[SerializeField] int _initialMana;	
-	protected int InitialMana
+	public int InitialMana
 	{
 		get { return _initialMana; }
 		set { _initialMana = value; }
 	}
 	[SerializeField] int _initialSpeed;
-	protected int InitialSpeed
+	public int InitialSpeed
 	{
 		get { return _initialSpeed; } 
 		set { _initialSpeed = value; }
 	}
 	[SerializeField] int _initialEndurance;
-	protected int InitialEndurance
+	public int InitialEndurance
 	{
 		get { return _initialEndurance; }
-		set { _initialEndurance = value; }
+		private set { _initialEndurance = value; }
 	}
 	[SerializeField] int _initialStrength;
-	protected int InitialStrength
+	public int InitialStrength
 	{
 		get { return _initialStrength; }
 		set { _initialStrength = value; }
 	}
 	[SerializeField] int _initialMagic;
-	protected int InitialMagic
+	public int InitialMagic
 	{
 		get { return _initialMagic; }
 		set { _initialMagic = value; }
 	}
 	[SerializeField] ElementType _characterElemType;
+	public ElementType CharacterElemType
+	{
+		get { return _characterElemType; }
+		set	{ _characterElemType = value; }
+	}
+
 	private int _currentActionValue;
 	public int CurrentActionValue 
 	{ 
@@ -88,39 +94,54 @@ public abstract class Unit : MonoBehaviour
 		set { _speedFrame = value; }
 	}
 
-	public readonly float _isStrongerElemScale = 1.6f;
-	public readonly float _isWeakerElemScale = 0.6f;
-	public readonly float _isAttackBuffed = 1.25f;
-	public readonly float _isEnemyDefUp = 0.8f;
-	
-	public readonly Dictionary<ElementType, ElementType> strongerElemCircle = new Dictionary<ElementType, ElementType>() 
+	[SerializeField] bool _isAttackBuff;
+	public bool IsAttackBuff
 	{
-		{ ElementType.Fire, ElementType.Poison },
-			{ ElementType.Poison, ElementType.Water },
-			{ ElementType.Water, ElementType.Fire }
-	};
-	public readonly Dictionary<ElementType, ElementType> weakerElemCircle = new Dictionary<ElementType, ElementType>() 
+		get { return _isAttackBuff; }
+		set { _isAttackBuff = value; }
+	}
+	[SerializeField] int _attackBuffCount = 0;
+	public int AttackBuffCount
 	{
-		{ ElementType.Poison, ElementType.Fire },
-			{ ElementType.Water, ElementType.Poison },
-			{ ElementType.Fire, ElementType.Water }
-	};
-	
+		get { return _attackBuffCount; }
+		set { _attackBuffCount = value; }
+	}
+
+	[SerializeField] bool _isDefenseBuff;
+	public bool IsDefenseBuff
+	{
+		get { return _isDefenseBuff; }
+		set { _isDefenseBuff = value; }
+	}
+	[SerializeField] int _defenseBuffCount = 0;
+	public int DefenseBuffCount
+	{
+		get { return _defenseBuffCount; }
+		set { _defenseBuffCount = value; }
+	}
+
+	public void UpdateBuff()
+	{
+		if (_attackBuffCount > 0) 
+		{
+			_attackBuffCount--;
+		}
+		if (_defenseBuffCount > 0)
+		{
+			_defenseBuffCount--;
+		}
+	}
+
 	public abstract void CalculateActionValue();
-	public abstract int DamageOutput(AttackType attack, ElementType target, int skillStat = 0);
+	public abstract int NormalDamageOutput();
+	public abstract int PhysicalDamageOutput(SkillPhysical skill);
+	public abstract int MagicalDamageOutput(ElementType target, SkillMagical skill);
 	public abstract void TakeDamage(int updateValue);
+	public abstract void Heal(int updateValue);
 	public abstract void ManaConsume(int updateValue);
 	public void UpdateActionValue(int updateValue)
 	{
 		_currentActionValue -= updateValue;
-	}
-	public bool IsStrongerElem(ElementType type)
-	{
-		return (strongerElemCircle[_characterElemType] == type);
-	}
-	public bool IsWeakerElem(ElementType type)
-	{
-		return (weakerElemCircle[_characterElemType] == type);
 	}
 	private void Awake()
 	{

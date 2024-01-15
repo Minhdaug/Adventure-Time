@@ -386,6 +386,7 @@
 "Assets/Scripts/BattleStates_FiniteStateMachine/BattlePlayerTurnState.cs"
 "Assets/Scripts/BattleStates_FiniteStateMachine/BattleSkillLogicApplicationState.cs"
 "Assets/Scripts/BattleStates_FiniteStateMachine/BattleStateManager.cs"
+"Assets/Scripts/Skills/NormalAttack.cs"
 "Assets/Scripts/Skills/Skill.cs"
 "Assets/Scripts/Skills/SkillBuff.cs"
 "Assets/Scripts/Skills/SkillHeal.cs"

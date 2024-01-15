@@ -27,66 +27,43 @@ public class Enemy : Unit
 		}
 	}
 
+	public override void Heal(int updateValue)
+	{
+		if (CurrentHealth + updateValue > InitialHealth)
+		{
+			CurrentHealth = InitialHealth;
+		}
+		else
+		{
+			CurrentHealth += updateValue;
+		}
+	}
+
 	public override void TakeDamage(int inputValue)
 	{
-		int receivedDamage = (int)(inputValue / Mathf.Sqrt(InitialEndurance * 8));
-
-		if (CurrentHealth <= receivedDamage)
+		if (CurrentHealth <= inputValue)
 		{
 			CurrentHealth = 0;
 		}
 		else
 		{
-			CurrentHealth -= receivedDamage;
+			CurrentHealth -= inputValue;
 		}
 	}
 
-	public override int DamageOutput(AttackType attack, ElementType target, int skillStat = 0)
+	public override int NormalDamageOutput()
 	{
-		int output;
-		float rawDamage;
+		int rawDamage = (int)(Mathf.Sqrt(0.5f) + Mathf.Sqrt(InitialStrength));
+		return rawDamage;
+	}
 
-		float isStrongerElemScale = 1.0f;
-		float isWeakerElemScale = 1.0f;
-		float isAttackBuffed = 1.0f;
-		float isEnemyDefUp = 1.0f;
+	public override int PhysicalDamageOutput(SkillPhysical skill)
+	{
+		return (int)(Mathf.Sqrt(skill.SkillStat) + Mathf.Sqrt(InitialStrength));
+	}
 
-		if (IsStrongerElem(target))
-		{
-			isStrongerElemScale = _isStrongerElemScale;
-		}
-		if (IsStrongerElem(target))
-		{
-			isWeakerElemScale = _isWeakerElemScale;
-		}
-		if (IsStrongerElem(target))
-		{
-			isAttackBuffed = _isAttackBuffed;
-		}
-		if (IsStrongerElem(target))
-		{
-			isEnemyDefUp = _isEnemyDefUp;
-		}
-
-		if (attack == AttackType.Normal)
-		{
-			rawDamage = Mathf.Sqrt(0.5f) + Mathf.Sqrt(InitialStrength);
-		}
-		else if (attack == AttackType.Skill)
-		{
-			if (skillStat == 0)
-			{
-				throw new System.ArgumentException($"Skill power cannot be 0.");
-			}
-			rawDamage = Mathf.Sqrt(skillStat) + Mathf.Sqrt(InitialMagic);
-		}
-		else
-		{
-			throw new System.ArgumentException($"Invalid AttackType: {attack}. Currently available attack types (enum) are: AttackType.Normal, AttackType.Skill.");
-		}
-
-		output = (int)(rawDamage * isStrongerElemScale * isWeakerElemScale * isAttackBuffed * isEnemyDefUp);
-
-		return output;
+	public override int MagicalDamageOutput(ElementType target, SkillMagical skill)
+	{
+		return (int)(Mathf.Sqrt(skill.SkillStat) + Mathf.Sqrt(InitialMagic));
 	}
 }

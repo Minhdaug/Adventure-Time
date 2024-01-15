@@ -2,20 +2,45 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class Hero : Unit
 {
 	private int _maxHealth = 0;
+	public int MaxHealth 
+	{ 
+		get { return _maxHealth; } 
+	}
+
 	private int _maxMana = 0;
+
 	private int _currentStrength = 0;
+	public int CurrentStrength
+	{
+		get { return _currentStrength; }
+		set { _currentStrength = value; }
+	}
+
 	private int _currentMagic = 0;
+
 	private int _currentSpeed = 0;
+
 	private int _currentEndurance = 0;
+
+	public int CurrentEndurance
+	{
+		get { return (int)_currentEndurance; }
+	}
 
 	[SerializeField] int _playerSpeedAdvantage;
 	[SerializeField] int _itemBonusStrength;
 	[SerializeField] int _bonusArmor;
+	public int BonusArmor
+	{
+		get { return _bonusArmor; }
+		set { _bonusArmor = value; }
+	}
 	[SerializeField] int _currentLevel;
 	public int CurrentLevel
 	{
@@ -23,8 +48,10 @@ public class Hero : Unit
 		set { _currentLevel = value;  }
 	}
 
-	private void Awake()
+	public void Awake()
 	{
+		Debug.Log("Awake of Hero.cs called");
+
 		_maxHealth = ((_currentLevel - 1) * 8) + InitialHealth;
 		CurrentHealth = _maxHealth;
 
@@ -54,7 +81,7 @@ public class Hero : Unit
 						break;
 				}
 			}
-			else if (i % 2 != 0) 
+			if (i % 2 != 0) 
 			{
 				switch (UnitName)
 				{
@@ -69,7 +96,7 @@ public class Hero : Unit
 				}
 				
 			}
-			else if (i % 3 == 0)
+			if (i % 3 == 0)
 			{
 				switch (UnitName)
 				{
@@ -84,7 +111,7 @@ public class Hero : Unit
 						break;
 				}
 			}
-			else if (!IsPrime(i))
+			if (!IsPrime(i))
 			{
 				switch (UnitName)
 				{
@@ -100,6 +127,8 @@ public class Hero : Unit
 				}
 			}
 		}
+
+		Debug.Log($"_currentStrength: {_currentStrength}");
 	}
 
 	private int _currentActionValue 
@@ -127,64 +156,42 @@ public class Hero : Unit
 
 	public override void TakeDamage(int inputValue)
 	{
-		int receivedDamage = (int)(inputValue / Mathf.Sqrt(_currentEndurance * 8 + _bonusArmor));
-
-		if (CurrentHealth <= receivedDamage)
+		if (CurrentHealth <= inputValue)
 		{
 			CurrentHealth = 0;
 		}
 		else
 		{
-			CurrentHealth -= receivedDamage;
+			CurrentHealth -= inputValue;
 		}
 	}
 
-	public override int DamageOutput(AttackType attack, ElementType target, int skillStat = 0)
+	public override void Heal(int updateValue)
 	{
-		int output;
-		float rawDamage;
-
-		float isStrongerElemScale = 1.0f;
-		float isWeakerElemScale = 1.0f;
-		float isAttackBuffed = 1.0f;
-		float isEnemyDefUp = 1.0f;
-
-		if (IsStrongerElem(target))
+		if (CurrentHealth + updateValue > _maxHealth)
 		{
-			isStrongerElemScale = _isStrongerElemScale;
-		}
-		if (IsStrongerElem(target))
-		{
-			isWeakerElemScale = _isWeakerElemScale;
-		}
-		if (IsStrongerElem(target))
-		{
-			isAttackBuffed = _isAttackBuffed;
-		}
-		if (IsStrongerElem(target))
-		{
-			isEnemyDefUp = _isEnemyDefUp;
-		}
-
-		if (attack == AttackType.Normal)
-		{
-			rawDamage = Mathf.Sqrt(0.5f * _itemBonusStrength) + Mathf.Sqrt(_currentStrength);
-		}
-		else if (attack == AttackType.Skill) {
-			if (skillStat == 0)
-			{
-				throw new System.ArgumentException($"Skill power cannot be 0.");
-			}
-			rawDamage = Mathf.Sqrt(skillStat) + Mathf.Sqrt(_currentMagic);
+			CurrentHealth = _maxHealth;
 		}
 		else
 		{
-			throw new System.ArgumentException($"Invalid AttackType: {attack}. Currently available attack types (enum) are: AttackType.Normal, AttackType.Skill.");
+			CurrentHealth += updateValue;
 		}
+	}
 
-		output = (int)(rawDamage * isStrongerElemScale * isWeakerElemScale * isAttackBuffed * isEnemyDefUp);
+	public override int NormalDamageOutput()
+	{
+		int rawDamage = (int)(Mathf.Sqrt(0.5f * _itemBonusStrength) + Mathf.Sqrt(_currentStrength));
+		return rawDamage;
+	}
 
-		return output;
+	public override int PhysicalDamageOutput(SkillPhysical skill)
+	{
+		return (int)(Mathf.Sqrt(skill.SkillStat) + Mathf.Sqrt(_currentStrength));
+	}
+
+	public override int MagicalDamageOutput(ElementType target, SkillMagical skill)
+	{
+		return (int)(Mathf.Sqrt(skill.SkillStat) + Mathf.Sqrt(_currentMagic));
 	}
 
 	public static bool IsPrime(int number)

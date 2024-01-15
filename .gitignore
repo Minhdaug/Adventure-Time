@@ -1,2 +1,12 @@
-
-Library/PackageCache/com.unity.burst@1.8.9/.Runtime/libburst-llvm-15.dylib
+/library/
+/Library/
+/Obj/
+/obj/
+/Build/
+/build/
+/Logs/
+/logs/
+/UserSettings/
+/usersettings/
+/Temp/
+/temp/

@@ -18,6 +18,13 @@ public class SkillsManager : MonoBehaviour
 
 private void Awake()
 	{
+		NormalAttack normalAttack = ScriptableObject.CreateInstance<NormalAttack>();
+		normalAttack.SkillName = "Normal Attack";
+		normalAttack.AoE = AoE.One;
+		normalAttack.ManaCost = 0;
+		normalAttack.SkillType = SkillType.Active;
+		normalAttack.TargetType = Target.Enemy;
+
 		SkillPhysical skillPhysical1 = ScriptableObject.CreateInstance<SkillPhysical>();
 		skillPhysical1.SkillName = "Physical Attack 1";
 		skillPhysical1.AoE = AoE.One;
@@ -294,18 +301,21 @@ private void Awake()
 		// Heroes
 		_characterSkills.Add("Mercy", new List<Skill>() 
 		{ 
+			normalAttack,
 			skillPhysical1, skillHeal1, skillDefenseBuff, skillPhysical2,
 			skillHealthRecovery1, skillPhysical3, skillPoison3,
 			skillDefenseBuffPlus, skillHealthRecovery2, skillPhysical4
 		});
-		_characterSkills.Add("Inirius", new List<Skill>() 
+		_characterSkills.Add("Inirius", new List<Skill>()
 		{
+			normalAttack,
 			skillFire1, skillWater1, skillFire2, skillWater2,
 			skillManaRecovery1, skillFire3, skillWater3,
 			skillManaRecovery2, skillFire4, skillWater4, 
 		});
-		_characterSkills.Add("Eni", new List<Skill>() 
-		{ 
+		_characterSkills.Add("Eni", new List<Skill>()
+		{
+			normalAttack,
 			skillHeal1, skillPoison1, skillAttackBuff, skillHeal2, 
 			skillManaRecovery1, skillPoison2, skillHeal3,
 			skillAttackBuffPlus, skillManaRecovery2, skillHeal4 
@@ -315,36 +325,46 @@ private void Awake()
 		// Bosses
 		_characterSkills.Add("Golem", new List<Skill>
 		{
+			normalAttack,
 			skillPhysical1, skillPhysical2, skillWater2, skillPoison1
 		});
 		_characterSkills.Add("Death", new List<Skill>
 		{
+			normalAttack,
 			skillPhysical2, skillFire3, skillPhysical3, skillPoison2
 		});
 		_characterSkills.Add("Dark Sorcerer", new List<Skill>
 		{
+			normalAttack,
 			skillFire4, skillWater4, skillPhysical3, skillPoison4
 		});
 
 		// Mobs
 		_characterSkills.Add("Slime", new List<Skill>
 		{
+			normalAttack,
 			skillWater1
 		});
-		_characterSkills.Add("Bat", new List<Skill> 
-		{ 
+		_characterSkills.Add("Bat", new List<Skill>
+		{
+			normalAttack,
 			skillFire1 
 		});
-		_characterSkills.Add("Goblin", new List<Skill> { 
+		_characterSkills.Add("Goblin", new List<Skill>
+		{
+			normalAttack,
 			skillPhysical1 
 		});
 		_characterSkills.Add("Skeleton", new List<Skill> {
+			normalAttack,
 			skillPhysical2, skillWater2
 		});
 		_characterSkills.Add("Zombie Warrior", new List<Skill> {
+			normalAttack,
 			skillFire2, skillHeal1
 		});
 		_characterSkills.Add("Skull", new List<Skill> {
+			normalAttack,
 			skillPoison3, skillFire3, skillWater3
 		});
 

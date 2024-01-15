@@ -55,7 +55,7 @@ public class BattleActionValueCalculateState : BattleBaseState
 
 		foreach (GameObject frame in _currentSpeedFrames)
 		{
-			GameObject.Destroy(frame);
+			UnityEngine.Object.Destroy(frame);
 		}
 
 		while (_turnQueue.Count < _queueLimit)
@@ -75,7 +75,7 @@ public class BattleActionValueCalculateState : BattleBaseState
 
 			_turnQueue.Enqueue(new Tuple<int, Unit>(_unitStats.First().Key, _unitStats.First().Value));
 
-			Debug.Log($"Added turn for: {_unitStats.First().Value.UnitName}");
+			//Debug.Log($"Added turn for: {_unitStats.First().Value.UnitName}");
 
 			_unitStats.First().Value.CalculateActionValue();
 		}
@@ -87,20 +87,20 @@ public class BattleActionValueCalculateState : BattleBaseState
 
 		if (unitStat is Hero)
 		{
-			state.CurrentHeroTurn = unitStat as Hero;
+			state.CurrentPlayer = unitStat as Hero;
 		}
 		else if (unitStat is Enemy) 
 		{
-			state.CurrentEnemyTurn = unitStat as Enemy;
+			state.CurrentPlayer = unitStat as Enemy;
 		}
 
-		_currentSpeedFrames.Add(GameObject.Instantiate(unitStat.SpeedFrame, state.SpeedFrameTransform[0]));
+		_currentSpeedFrames.Add(UnityEngine.Object.Instantiate(unitStat.SpeedFrame, state.SpeedFrameTransform[0]));
 
 		int count = 1;
 
 		foreach (Tuple<int, Unit> unit in _turnQueue)
 		{
-			_currentSpeedFrames.Add(GameObject.Instantiate(unit.Item2.SpeedFrame, state.SpeedFrameTransform[count]));
+			_currentSpeedFrames.Add(UnityEngine.Object.Instantiate(unit.Item2.SpeedFrame, state.SpeedFrameTransform[count]));
 			count++;
 		}
 

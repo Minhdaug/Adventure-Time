@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\BattleStates_FiniteStateMachine\BattleStateManager.cs" />
     <Compile Include="Assets\Scripts\Units\Unit.cs" />
     <Compile Include="Assets\Scripts\Skills\SkillPassiveHealthRecovery.cs" />
+    <Compile Include="Assets\Scripts\Skills\NormalAttack.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
     <Compile Include="Assets\Scripts\Units\Enemy.cs" />
     <Compile Include="Assets\Scripts\Skills\SkillMagical.cs" />
