@@ -38,6 +38,8 @@ public class menu : MonoBehaviour
     public List<TextMeshProUGUI> SkillNameDescription; // 0 == name, 1 == description
     private Skill selectedSkill;
 
+    public GameObject player;
+
     //read and write save file
     public void SerializeJson(int saveSlot)
     {
@@ -45,6 +47,8 @@ public class menu : MonoBehaviour
         {
             DateTime saveTime = DateTime.Now;
             SaveFile.saveTime = saveTime;
+            SaveFile.mapData.currPosY = player.transform.position.y;
+            SaveFile.mapData.currPosX = player.transform.position.x;
             if (saveSlot > 3)
             {
                 DataService.SaveData($"/staticSaveData.json", SaveFile, false);
@@ -419,7 +423,7 @@ public class menu : MonoBehaviour
         SkillNameDescription[1].text = selectedSkill.description;
     }
 
-    private void Awake()
+     void OnEnable()
     {
         DeserializeJson(4, false);
         UpdateTempData();

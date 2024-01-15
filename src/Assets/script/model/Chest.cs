@@ -10,7 +10,8 @@ namespace Assets.script.model
     {
         public int id = 0;
         public int goldReward = 100;
-        public string itemReward = "";
+        public List<Item> itemReward;
         public bool opened = false;
+
     }
 }

@@ -1,24 +1,13 @@
 ﻿using System.Collections.Generic;
+using Assets.script.defaultData;
 
 namespace Assets.script.model
 {
     public class Map
     {
-        public float currPosX = 0;
+        public float currPosX = 12;
         public float currPosY = 0; 
-        public List<Chest> chestList = new List<Chest>(){
-            new Chest() {
-                id = 0,
-                goldReward = 100,
-                itemReward = "",
-                opened = false
-            }, new Chest() {
-                id = 0,
-                goldReward = 100,
-                itemReward = "",
-                opened = false
-            } 
-        };
+        public List<Chest> chestList = new ChestData().ChestDefaultList;
         public List<Enemy> enemyList = new List<Enemy>(){
             new Enemy() {
                 id = 0,
