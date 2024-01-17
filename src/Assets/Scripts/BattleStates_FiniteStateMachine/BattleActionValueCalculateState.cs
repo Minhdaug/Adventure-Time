@@ -16,13 +16,13 @@ public class BattleActionValueCalculateState : BattleBaseState
 
 	public override void EnterState(BattleStateManager state, Dictionary<int, bool> gameObjectId)
 	{
-		Debug.Log("Entered EnterState of BattleActionValueCalculateState.");
+		//Debug.Log("Entered EnterState of BattleActionValueCalculateState.");
 
 		_gameObjectId = gameObjectId;
 		//if (_gameObjectsWithIds == null)
 		if (_unitStats.Count <= 0)
 		{
-			Debug.Log("First time assigning called.");
+			//Debug.Log("First time assigning called.");
 			foreach (KeyValuePair<int, bool> pair in gameObjectId) 
 			{
 				int key = pair.Key;
@@ -41,17 +41,17 @@ public class BattleActionValueCalculateState : BattleBaseState
 		}
 		else
 		{
-			Debug.Log("Updating GameObject States.");
+			//Debug.Log("Updating GameObject States.");
 			UpdateGOStates(gameObjectId);
 		}
 
-		Debug.Log("Switching to UpdateState.");
+		//Debug.Log("Switching to UpdateState.");
 		UpdateState(state);
 	}
 
 	public override void UpdateState(BattleStateManager state)
 	{
-		Debug.Log("Entered UpdateState of BattleActionValueCalculateState");
+		//Debug.Log("Entered UpdateState of BattleActionValueCalculateState");
 
 		foreach (GameObject frame in _currentSpeedFrames)
 		{
@@ -115,7 +115,7 @@ public class BattleActionValueCalculateState : BattleBaseState
 			// Enter state of enemy turn
 		}
 
-		Debug.Log("Ready to switch to another state...");
+		//Debug.Log("Ready to switch to another state...");
 	}
 
 

@@ -139,6 +139,18 @@ public abstract class Unit : MonoBehaviour
 	public abstract void TakeDamage(int updateValue);
 	public abstract void Heal(int updateValue);
 	public abstract void ManaConsume(int updateValue);
+
+	public void ManaRecovery(int updateValue)
+	{
+		if (CurrentMana + updateValue > _initialMana)
+		{
+			CurrentMana = _initialMana;
+		}
+		else
+		{
+			CurrentMana += updateValue;
+		}
+	}
 	public void UpdateActionValue(int updateValue)
 	{
 		_currentActionValue -= updateValue;
@@ -147,5 +159,9 @@ public abstract class Unit : MonoBehaviour
 	{
 		_currentHealth = _initialHealth;
 		_currentMana = _initialMana;
+	}
+	public void DisableOnDeath()
+	{
+		gameObject.SetActive(false);
 	}
 }

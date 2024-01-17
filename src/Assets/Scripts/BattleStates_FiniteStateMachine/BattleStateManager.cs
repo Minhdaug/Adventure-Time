@@ -16,7 +16,14 @@ public class BattleStateManager : MonoBehaviour
     public BattleAnimationState currentAnimationState = new BattleAnimationState();
     private SkillsManager _skillManager;
 
-	[SerializeField]
+	private Dictionary<string, Animator> _unitAnimator = new Dictionary<string, Animator>();
+	public Dictionary<string, Animator> UnitAnimator
+	{
+		get { return _unitAnimator; }
+		set { _unitAnimator = value; }
+	}
+
+	//[SerializeField]
 
 	public SkillsManager SkillsManager
 	{
@@ -150,6 +157,10 @@ public class BattleStateManager : MonoBehaviour
 			GameObject tempGO = Instantiate(_heroesGO[i], _playerTransforms[i]);
 			SpriteRenderer sr = tempGO.GetComponent<SpriteRenderer>();
 
+			Unit tempUnit = tempGO.GetComponent<Unit>();
+			Animator tempAnimator = tempGO.GetComponent<Animator>();
+			_unitAnimator.Add(tempUnit.UnitName, tempAnimator);
+
 			if (sr == null)
 			{
 				Debug.Log("sr is null");
@@ -181,6 +192,10 @@ public class BattleStateManager : MonoBehaviour
 			GameObject tempGO = Instantiate(_enemiesGO[i], _enemyTransforms[i]);
 			SpriteRenderer sr = tempGO.GetComponent<SpriteRenderer>();
 			sr.sortingLayerName = "Characters";
+
+			Unit tempUnit = tempGO.GetComponent<Unit>();
+			Animator tempAnimator = tempGO.GetComponent<Animator>();
+			_unitAnimator.Add(tempUnit.UnitName, tempAnimator);
 
 			if (sr == null)
 			{
@@ -220,4 +235,9 @@ public class BattleStateManager : MonoBehaviour
         _currentBattleState = state;
         _currentBattleState.EnterState(this, _currentGameObjects);
     }
+
+	public void AssignSwitchStateOnEndAnimation(Animator animator)
+	{
+
+	}
 }

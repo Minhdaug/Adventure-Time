@@ -6,7 +6,7 @@ using UnityEngine;
 public class SkillMagical : Skill
 {
 	private ElementType _elementType;
-	public ElementType elementType
+	public ElementType ElementType
 	{
 		get { return _elementType; }
 		set { _elementType = value; }

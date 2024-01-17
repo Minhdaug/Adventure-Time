@@ -7,26 +7,31 @@ using UnityEngine.UI;
 
 public class Hero : Unit
 {
-	private int _maxHealth = 0;
+	private int _maxHealth;
 	public int MaxHealth 
 	{ 
 		get { return _maxHealth; } 
 	}
 
-	private int _maxMana = 0;
+	private int _maxMana;
+	public int MaxMana
+	{
+		get { return _maxMana; }
+		set { _maxMana = value; }
+	}
 
-	private int _currentStrength = 0;
+	private int _currentStrength;
 	public int CurrentStrength
 	{
 		get { return _currentStrength; }
 		set { _currentStrength = value; }
 	}
 
-	private int _currentMagic = 0;
+	private int _currentMagic;
 
-	private int _currentSpeed = 0;
+	private int _currentSpeed;
 
-	private int _currentEndurance = 0;
+	private int _currentEndurance;
 
 	public int CurrentEndurance
 	{
@@ -50,7 +55,7 @@ public class Hero : Unit
 
 	public void Awake()
 	{
-		Debug.Log("Awake of Hero.cs called");
+		//Debug.Log("Awake of Hero.cs called");
 
 		_maxHealth = ((_currentLevel - 1) * 8) + InitialHealth;
 		CurrentHealth = _maxHealth;
@@ -91,7 +96,7 @@ public class Hero : Unit
 					case "Inirius":
 						break;
 					case "Eni":
-						_currentMagic++;
+						_currentStrength++;
 						break;
 				}
 				
@@ -128,7 +133,7 @@ public class Hero : Unit
 			}
 		}
 
-		Debug.Log($"_currentStrength: {_currentStrength}");
+		//Debug.Log($"_currentStrength in Awake: {_currentStrength}");
 	}
 
 	private int _currentActionValue 
@@ -180,6 +185,10 @@ public class Hero : Unit
 
 	public override int NormalDamageOutput()
 	{
+		//Debug.Log($"_itemBonusStrength in NormalDamageOutput: {_itemBonusStrength}");
+		//Debug.Log($"_currentStrength in NormalDamageOutput: {_currentStrength}");
+		//Debug.Log($"Mathf.Sqrt(_currentStrength): {Mathf.Sqrt(0.5f * _itemBonusStrength)}");
+		//Debug.Log($"Mathf.Sqrt(_currentStrength): {Mathf.Sqrt(_currentStrength)}");
 		int rawDamage = (int)(Mathf.Sqrt(0.5f * _itemBonusStrength) + Mathf.Sqrt(_currentStrength));
 		return rawDamage;
 	}
@@ -211,4 +220,5 @@ public class Hero : Unit
 
 		return true;
 	}
+
 }

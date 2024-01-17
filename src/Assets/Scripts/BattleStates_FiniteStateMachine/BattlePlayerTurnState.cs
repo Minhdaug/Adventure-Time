@@ -14,16 +14,12 @@ public class BattlePlayerTurnState : BattleBaseState
 	private Dictionary<GameObject, Skill> _eniSkillButtons = new Dictionary<GameObject, Skill>();
 	private Dictionary<GameObject, Skill> _iniriusSkillButtons = new Dictionary<GameObject, Skill>();
 
-
 	private Hero _currentPlayer;
-	private Skill _selectedSkill;
-	private Unit _selectedTarget;
 
 	private SkillsManager _skillsManager;
 
 	private Dictionary<Unit, GameObject> _heroesSelectFrames = new Dictionary<Unit, GameObject>();
 	private Dictionary<Unit, GameObject> _enemiesSelectFrames = new Dictionary<Unit, GameObject>();
-	private Dictionary<int, Button> _allGO = new Dictionary<int, Button>();
 	private Dictionary<int, bool> _currentStateOfChars = new Dictionary<int, bool>();
 	private BattleStateManager _currentState;
 
@@ -52,6 +48,13 @@ public class BattlePlayerTurnState : BattleBaseState
 				if (target is Hero)
 				{
 					List<Skill> playerSkills = _skillsManager.GetHeroSkill(target.UnitName, _currentPlayer.CurrentLevel);
+
+					//Debug.Log($"Current character: {target.UnitName}");
+
+					//foreach (Skill skill in playerSkills)
+					//{
+					//	Debug.Log($"Skill name: {skill.SkillName}");
+					//}
 
 					int count = 0;
 
@@ -194,7 +197,7 @@ public class BattlePlayerTurnState : BattleBaseState
 			if (Input.GetMouseButtonDown(0))
 			{
 				Vector3 clickPosition = Input.mousePosition;
-				Debug.Log($"Mouse clicked at: {Input.mousePosition}");
+				//Debug.Log($"Mouse clicked at: {Input.mousePosition}");
 
 				bool clickedOutside = true;
 
@@ -215,7 +218,7 @@ public class BattlePlayerTurnState : BattleBaseState
 				}
 				if (clickedOutside)
 				{
-					Debug.Log("Clicked outside of the selection buttons...");
+					//Debug.Log("Clicked outside of the selection buttons...");
 
 					foreach (KeyValuePair<Unit, GameObject> kvp in dict)
 					{
@@ -224,7 +227,7 @@ public class BattlePlayerTurnState : BattleBaseState
 				}
 				else
 				{
-					Debug.Log("Selected a target");
+					//Debug.Log("Selected a target");
 					switch (_currentPlayer.UnitName)
 					{
 						case "Mercy":
