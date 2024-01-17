@@ -9,9 +9,9 @@ namespace Assets.script.services
 {
     public class ItemService
     {
-        public SaveFile saveFile;
+        private SaveFile saveFile;
+        private JsonDataService DataService = new JsonDataService();
         public int chestId = -1;
-        public JsonDataService DataService = new JsonDataService();
         private void SerializeStaticSave()
         {
             try
