@@ -125,8 +125,8 @@ namespace Assets.script.model
         {
             new Item()
             {
-                name = "Binh mau 1",
-                description = "Hoi phuc 30% HP cho mot dong minh",
+                name = "Potion 1",
+                description = "Heal 30% Max Hp for an ally",
                 amount = 5,
                 atkPowGain = 0,
                 consumable = true,
@@ -139,8 +139,8 @@ namespace Assets.script.model
             },
             new Item()
             {
-                name = "Binh mana 1",
-                description = "Hoi phuc 30% MP cho mot dong minh",
+                name = "Energy Drink 1",
+                description = "Recover 30% Max Mp for an ally",
                 amount = 3,
                 atkPowGain = 0,
                 consumable = true,
@@ -151,9 +151,9 @@ namespace Assets.script.model
                 MPGain = 0.3f,
                 cost = 10
             },
-            new Item()
+           new Item()
             {
-                name = "Gang tay sat nam 1",
+                name = "Warrior Sword 1",
                 description = "+44 Attack Power",
                 amount = 1,
                 atkPowGain = 44,
@@ -167,7 +167,7 @@ namespace Assets.script.model
             },
             new Item()
             {
-                name = "gang tay sat nu 1",
+                name = "Spellcaster Scepter 1",
                 description = "+40 Attack Power",
                 amount = 1,
                 atkPowGain = 40,
@@ -180,8 +180,8 @@ namespace Assets.script.model
                 cost = 6
             },
             new Item()
-            {
-                name = "gang tay sat nu 1",
+           {
+                name = "Spellcaster Scepter 1",
                 description = "+40 Attack Power",
                 amount = 1,
                 atkPowGain = 40,
@@ -195,34 +195,48 @@ namespace Assets.script.model
             },
             new Item()
             {
-                name = "giap nam 1",
-                description = "+20 defend",
+                name = "Warrior Armor 1",
+                description = "+25 defend",
                 amount = 1,
                 atkPowGain = 0,
                 consumable = false,
-                defGain = 20,
-                equippedOn = CharClass.mage,
-                couldBeUseOn = new List<CharClass>(){CharClass.mage},
+                defGain = 25,
+                equippedOn = CharClass.warrior,
+                couldBeUseOn = new List<CharClass>(){CharClass.warrior},
                 HPGain = 0,
                 MPGain = 0,
-                cost = 10
+                cost = 20
             },
             new Item()
             {
-                name = "giap nu 1",
+                name = "Spellcaster Armor 2",
                 description = "+25 defend",
                 amount = 1,
                 atkPowGain = 0,
                 consumable = false,
                 defGain = 25,
                 equippedOn = CharClass.mage,
-                couldBeUseOn = new List<CharClass>(){CharClass.healer},
+                couldBeUseOn = new List<CharClass>(){CharClass.mage},
                 HPGain = 0,
                 MPGain = 0,
-                cost = 20,
+                cost = 20
+            },
+            new Item()
+            {
+                name = "Spellcaster Armor 2",
+                description = "+25 defend",
+                amount = 1,
+                atkPowGain = 0,
+                consumable = false,
+                defGain = 25,
+                equippedOn = CharClass.healer,
+                couldBeUseOn = new List<CharClass>(){CharClass.mage},
+                HPGain = 0,
+                MPGain = 0,
+                cost = 20
             }
         };
-        public int Gold = 200;
+        public int Gold = 50;
         public DateTime saveTime = DateTime.Now;
     }
 }

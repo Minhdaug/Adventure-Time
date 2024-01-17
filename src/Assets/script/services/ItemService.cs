@@ -62,17 +62,27 @@ namespace Assets.script.services
                     }
                 }
             }
-            if(chestId > -1)
+            if (chestId > -1)
             {
                 saveFile.mapData.chestList[chestId].opened = true;
             }
             SerializeStaticSave();
         }
-        public void AddGold(int gold)
+        public bool AddGold(int gold)
         {
             DeserializeStaticSave();
-            saveFile.Gold += gold;
-            SerializeStaticSave() ;
+            if (saveFile.Gold + gold > 0)
+            {
+                saveFile.Gold += gold;
+                SerializeStaticSave();
+                return true;
+            }
+            return false;
+        }
+        public int getGold()
+        {
+            DeserializeStaticSave();
+            return saveFile.Gold;
         }
     }
 }

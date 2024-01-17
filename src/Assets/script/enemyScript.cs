@@ -3,13 +3,15 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Assets.script.model;
+using Assets.script.services;
 
 public class NPCMovement : MonoBehaviour
 {
     public Vector3[] waypoints;   // Array of positions the NPC will follow
     public float moveSpeed = 3f;  // Adjust this value to control the NPC's movement speed
-    public EnemyName enemyName;
+    public int enemyId;
     private Animator animator;
+    private CombatService combatService = new CombatService();
 
     private int currentWaypointIndex = 0;
 
@@ -77,7 +79,7 @@ void RotateTowardsOppositeDirection()
     {
         if (collision.gameObject.tag == "Player")
         {
-
+            combatService.SaveCombateData(enemyId);
             SceneManager.LoadScene("TestCombat");
         }
 

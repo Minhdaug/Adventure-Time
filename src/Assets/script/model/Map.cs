@@ -8,16 +8,6 @@ namespace Assets.script.model
         public float currPosX = 12;
         public float currPosY = 0; 
         public List<Chest> chestList = new ChestData().ChestDefaultList;
-        public List<EnemyModel> enemyList = new List<EnemyModel>(){
-            new EnemyModel() {
-                id = 0,
-                name = EnemyName.Slime,
-                isAlive = true,
-            }, new EnemyModel() {
-                id = 1,
-                name = EnemyName.Orc,
-                isAlive = true,
-            }
-        };
+        public List<EnemyModel> enemyList = new EnemyList().EnemiesOnMap;
     }
 }
