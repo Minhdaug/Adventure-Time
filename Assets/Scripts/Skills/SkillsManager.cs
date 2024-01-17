@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -62,37 +63,37 @@ private void Awake()
 		_skillsDict.Add(skillPhysical3.SkillName, skillPhysical3);
 		_skillsDict.Add(skillPhysical4.SkillName, skillPhysical4);
 
-		SkillMagical skillFire1 = ScriptableObject.CreateInstance<SkillMagical>();
+		SkillFire skillFire1 = ScriptableObject.CreateInstance<SkillFire>();
 		skillFire1.SkillName = "Fire Attack 1";
 		skillFire1.AoE = AoE.One;
-		skillFire1.elementType = ElementType.Fire;
+		skillFire1.ElementType = ElementType.Fire;
 		skillFire1.SkillStat = 40;
 		skillFire1.ManaCost = 4;
 		skillFire1.SkillType = SkillType.Active;
 		skillFire1.TargetType = Target.Enemy;
 
-		SkillMagical skillFire2 = ScriptableObject.CreateInstance<SkillMagical>();
+		SkillFire skillFire2 = ScriptableObject.CreateInstance<SkillFire>();
 		skillFire2.SkillName = "Fire Attack 2";
 		skillFire2.AoE = AoE.All;
-		skillFire1.elementType = ElementType.Fire;
+		skillFire1.ElementType = ElementType.Fire;
 		skillFire2.SkillStat = 40;
 		skillFire2.ManaCost = 10;
 		skillFire1.SkillType = SkillType.Active;
 		skillFire1.TargetType = Target.Enemy;
 
-		SkillMagical skillFire3 = ScriptableObject.CreateInstance<SkillMagical>();
+		SkillFire skillFire3 = ScriptableObject.CreateInstance<SkillFire>();
 		skillFire3.SkillName = "Fire Attack 3";
 		skillFire3.AoE = AoE.One;
-		skillFire1.elementType = ElementType.Fire;
+		skillFire1.ElementType = ElementType.Fire;
 		skillFire3.SkillStat = 90;
 		skillFire3.ManaCost = 8;
 		skillFire1.SkillType = SkillType.Active;
 		skillFire1.TargetType = Target.Enemy;
 
-		SkillMagical skillFire4 = ScriptableObject.CreateInstance<SkillMagical>();
+		SkillFire skillFire4 = ScriptableObject.CreateInstance<SkillFire>();
 		skillFire4.SkillName = "Fire Attack 4";
 		skillFire4.AoE = AoE.All;
-		skillFire1.elementType = ElementType.Fire;
+		skillFire1.ElementType = ElementType.Fire;
 		skillFire4.SkillStat = 90;
 		skillFire4.ManaCost = 16;
 		skillFire1.SkillType = SkillType.Active;
@@ -104,37 +105,37 @@ private void Awake()
 		_skillsDict.Add(skillFire4.SkillName, skillFire4);
 
 
-		SkillMagical skillWater1 = ScriptableObject.CreateInstance<SkillMagical>();
+		SkillWater skillWater1 = ScriptableObject.CreateInstance<SkillWater>();
 		skillWater1.SkillName = "Water Attack 1";
 		skillWater1.AoE = AoE.One;
-		skillWater1.elementType = ElementType.Water;
+		skillWater1.ElementType = ElementType.Water;
 		skillWater1.SkillStat = 40;
 		skillWater1.ManaCost = 4;
 		skillWater1.SkillType = SkillType.Active;
 		skillWater1.TargetType = Target.Enemy;
 
-		SkillMagical skillWater2 = ScriptableObject.CreateInstance<SkillMagical>();
+		SkillWater skillWater2 = ScriptableObject.CreateInstance<SkillWater>();
 		skillWater2.SkillName = "Water Attack 2";
 		skillWater2.AoE = AoE.All;
-		skillWater2.elementType = ElementType.Water;
+		skillWater2.ElementType = ElementType.Water;
 		skillWater2.SkillStat = 40;
 		skillWater2.ManaCost = 10;
 		skillWater2.SkillType = SkillType.Active;
 		skillWater2.TargetType = Target.Enemy;
 
-		SkillMagical skillWater3 = ScriptableObject.CreateInstance<SkillMagical>();
+		SkillWater skillWater3 = ScriptableObject.CreateInstance<SkillWater>();
 		skillWater3.SkillName = "Water Attack 3";
 		skillWater3.AoE = AoE.One;
-		skillWater3.elementType = ElementType.Water;
+		skillWater3.ElementType = ElementType.Water;
 		skillWater3.SkillStat = 90;
 		skillWater3.ManaCost = 8;
 		skillWater3.SkillType = SkillType.Active;
 		skillWater3.TargetType = Target.Enemy;
 
-		SkillMagical skillWater4 = ScriptableObject.CreateInstance<SkillMagical>();
+		SkillWater skillWater4 = ScriptableObject.CreateInstance<SkillWater>();
 		skillWater4.SkillName = "Water Attack 4";
 		skillWater4.AoE = AoE.All;
-		skillWater4.elementType = ElementType.Water;
+		skillWater4.ElementType = ElementType.Water;
 		skillWater4.SkillStat = 90;
 		skillWater4.ManaCost = 16;
 		skillWater4.SkillType = SkillType.Active;
@@ -146,37 +147,37 @@ private void Awake()
 		_skillsDict.Add(skillWater4.SkillName, skillWater4);
 
 
-		SkillMagical skillPoison1 = ScriptableObject.CreateInstance<SkillMagical>();
+		SkillPoison skillPoison1 = ScriptableObject.CreateInstance<SkillPoison>();
 		skillPoison1.SkillName = "Poison Attack 1";
 		skillPoison1.AoE = AoE.One;
-		skillPoison1.elementType = ElementType.Poison;
+		skillPoison1.ElementType = ElementType.Poison;
 		skillPoison1.SkillStat = 40;
 		skillPoison1.ManaCost = 4;
 		skillPoison1.SkillType = SkillType.Active;
 		skillPoison1.TargetType = Target.Enemy;
 
-		SkillMagical skillPoison2 = ScriptableObject.CreateInstance<SkillMagical>();
+		SkillPoison skillPoison2 = ScriptableObject.CreateInstance<SkillPoison>();
 		skillPoison2.SkillName = "Poison Attack 2";
 		skillPoison2.AoE = AoE.All;
-		skillPoison2.elementType = ElementType.Poison;
+		skillPoison2.ElementType = ElementType.Poison;
 		skillPoison2.SkillStat = 40;
 		skillPoison2.ManaCost = 10;
 		skillPoison2.SkillType = SkillType.Active;
 		skillPoison2.TargetType = Target.Enemy;
 
-		SkillMagical skillPoison3 = ScriptableObject.CreateInstance<SkillMagical>();
+		SkillPoison skillPoison3 = ScriptableObject.CreateInstance<SkillPoison>();
 		skillPoison3.SkillName = "Poison Attack 3";
 		skillPoison3.AoE = AoE.One;
-		skillPoison3.elementType = ElementType.Poison;
+		skillPoison3.ElementType = ElementType.Poison;
 		skillPoison3.SkillStat = 90;
 		skillPoison3.ManaCost = 8;
 		skillPoison3.SkillType = SkillType.Active;
 		skillPoison3.TargetType = Target.Enemy;
 
-		SkillMagical skillPoison4 = ScriptableObject.CreateInstance<SkillMagical>();
+		SkillPoison skillPoison4 = ScriptableObject.CreateInstance<SkillPoison>();
 		skillPoison4.SkillName = "Poison Attack 4";
 		skillPoison4.AoE = AoE.All;
-		skillPoison4.elementType = ElementType.Poison;
+		skillPoison4.ElementType = ElementType.Poison;
 		skillPoison4.SkillStat = 90;
 		skillPoison4.ManaCost = 16;
 		skillPoison4.SkillType = SkillType.Active;
@@ -380,22 +381,34 @@ private void Awake()
 
 	public List<Skill> GetHeroSkill (string heroName, int currentLevel)
 	{
+		//Debug.Log($"Running for {heroName}");
 		if (_characterSkills.ContainsKey(heroName))
 		{
-			List <Skill> tempSkillList = _characterSkills[heroName].ToList();
-			List <Skill> result = new List<Skill>();
+			List<Skill> heroSkillList = _characterSkills[heroName].ToList();
+			List<Skill> result = new List<Skill>();
+
+			result.Add(heroSkillList[0]);
+			heroSkillList.Remove(heroSkillList[0]);
+
 			for (int i = 1; i <= currentLevel; i++)
 			{
+				if (heroSkillList.Count == 0)
+				{
+					break;
+				}
 				if (i % 5 == 0)
 				{
-					Skill existingSkill = result.FirstOrDefault(element => element.GetType() == tempSkillList[0].GetType());
-					
-					if (existingSkill != null)
+					Skill skillToReplace = result.FirstOrDefault(skill => skill.GetType() == heroSkillList[0].GetType());
+
+					if (skillToReplace != null)
 					{
-						result.Remove(existingSkill);
+						result[result.IndexOf(skillToReplace)] = heroSkillList[0];
 					}
-					result.Add(tempSkillList[0]);
-					tempSkillList.Remove(tempSkillList[0]);
+					else
+					{
+						result.Add(heroSkillList[0]);
+					}
+					heroSkillList.RemoveAt(0);
 				}
 			}
 			return result;
