@@ -164,7 +164,10 @@ public class BattlePlayerTurnState : BattleBaseState
 	{
 		foreach (KeyValuePair<Unit, GameObject> entry in dict) 
 		{
-			entry.Value.SetActive(true);
+			if (entry.Key.CurrentHealth > 0)
+			{
+				entry.Value.SetActive(true);
+			}
 		}
 		_targetSelectionCoroutine = _currentState.StartCoroutine(WaitingForTargetSelection(dict));
 	}

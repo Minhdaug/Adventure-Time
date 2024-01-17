@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class Enemy : Unit
 {
+	public void Awake()
+	{
+		CurrentHealth = InitialHealth;
+		CurrentMana = InitialHealth;
+	}
+
 	private int _currentActionValue
 	{
 		get { return _currentActionValue; }
@@ -53,17 +59,20 @@ public class Enemy : Unit
 
 	public override int NormalDamageOutput()
 	{
-		int rawDamage = (int)(Mathf.Sqrt(0.5f) + Mathf.Sqrt(InitialStrength));
-		return rawDamage;
+		//int rawDamage = (int)(Mathf.Sqrt(0.5f) + Mathf.Sqrt(InitialStrength));
+		return InitialStrength;
+		//return rawDamage;
 	}
 
 	public override int PhysicalDamageOutput(SkillPhysical skill)
 	{
-		return (int)(Mathf.Sqrt(skill.SkillStat) + Mathf.Sqrt(InitialStrength));
+		//return (int)(Mathf.Sqrt(skill.SkillStat) + Mathf.Sqrt(InitialStrength));
+		return (int)(skill.SkillStat + InitialStrength);
 	}
 
 	public override int MagicalDamageOutput(ElementType target, SkillMagical skill)
 	{
-		return (int)(Mathf.Sqrt(skill.SkillStat) + Mathf.Sqrt(InitialMagic));
+		return (int)(skill.SkillStat + InitialMagic);
+		//return (int)(Mathf.Sqrt(skill.SkillStat) + Mathf.Sqrt(InitialMagic));
 	}
 }

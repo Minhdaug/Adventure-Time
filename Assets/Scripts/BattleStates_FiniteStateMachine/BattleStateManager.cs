@@ -40,11 +40,13 @@ public class BattleStateManager : MonoBehaviour
 	public List<GameObject> HeroesGO
 	{
 		get { return _heroesGO; }
+		set { _heroesGO = value; }
 	}
 	[SerializeField] List<GameObject> _enemiesGO;
 	public List<GameObject> EnemiesGO
 	{
 		get { return _enemiesGO; }
+		set { _enemiesGO = value; }
 	}
 
 
