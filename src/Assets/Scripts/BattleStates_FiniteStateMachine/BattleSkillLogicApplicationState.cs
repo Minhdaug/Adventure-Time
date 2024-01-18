@@ -1,22 +1,30 @@
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BattleSkillLogicApplicationState : BattleBaseState
 {
 	private bool _init;
 	private Unit _caster;
+	private int _casterInstanceID;
 	private Skill _currentSkill;
 	private Unit _target;
+	private int _targetInstanceID;
 	private bool _recentlyCastAttackBuff = false;
 	private bool _recentlyCastDefenseBuff = false;
-	private Dictionary<string, Animator> _unitAnimator;
+	private Dictionary<int, Animator> _unitAnimator;
 	private Dictionary<int, bool> _gameObjectsState;
-	private Dictionary<int, GameObject> _gameObjectIds = new Dictionary<int, GameObject>();
+	//private Dictionary<int, GameObject> _gameObjectIds = new Dictionary<int, GameObject>();
+
+	private Dictionary<GameObject, int> _gameObjectIds = new Dictionary<GameObject, int>();
 	private Dictionary<Unit, GameObject> _unitGameObjects = new Dictionary<Unit, GameObject>();
 
 	private List<Hero> _heroesUnit = new List<Hero>();
 	private List<Enemy> _enemiesUnit = new List<Enemy>();
+
+	private List<int> _heroesInstanceIDs = new List<int>();
+	private List<int> _enemiesInstanceIDs = new List<int>();
 
 	public readonly float _isStrongerElemScale = 1.6f;
 	public readonly float _isWeakerElemScale = 0.6f;
@@ -226,20 +234,25 @@ public class BattleSkillLogicApplicationState : BattleBaseState
 
 		if (!_init)
 		{
+			_casterInstanceID = state.CurrentPlayerID;
+			_targetInstanceID = state.SelectedTargetID;
+
 			foreach (KeyValuePair<int, bool> kvp in gameObjectsState)
 			{
 				GameObject tempGO = EditorUtility.InstanceIDToObject(kvp.Key) as GameObject;
-				_gameObjectIds.Add(kvp.Key, tempGO);
+				_gameObjectIds.Add(tempGO, kvp.Key);
 				Unit tempUnit = tempGO.GetComponent<Unit>();
 				_unitGameObjects.Add(tempUnit, tempGO);
 
 				if (tempUnit is Hero)
 				{
 					_heroesUnit.Add(tempUnit as Hero);
+					_heroesInstanceIDs.Add(kvp.Key);
 				}
 				else if (tempUnit is Enemy)
 				{
 					_enemiesUnit.Add(tempUnit as Enemy);
+					_enemiesInstanceIDs.Add(kvp.Key);
 				}
 				else
 				{
@@ -254,6 +267,13 @@ public class BattleSkillLogicApplicationState : BattleBaseState
 	public override void UpdateState(BattleStateManager state)
 	{
 		//Debug.Log("Entered SkillLogicApplicationState - Update State");
+
+		Debug.Log($"{_unitAnimator.Count}");
+
+		foreach (KeyValuePair<int, Animator> kvp in _unitAnimator)
+		{
+			Debug.Log($"{kvp.Key}, {kvp.Value}");
+		}
 
 		if (_currentSkill is SkillBuff)
 		{
@@ -395,16 +415,16 @@ public class BattleSkillLogicApplicationState : BattleBaseState
 		else if (_currentSkill is SkillPhysical)
 		{
 			SkillPhysical currentSkill = _currentSkill as SkillPhysical;
-			_unitAnimator[_caster.UnitName].SetTrigger("IsAttacking");
+			_unitAnimator[_casterInstanceID].SetTrigger("IsAttacking");
 
 			if (currentSkill.AoE == AoE.One)
 			{
 				int rawDamage = _caster.PhysicalDamageOutput(currentSkill);
 				int calculatedDamage = PhysicalSkillDamageCalculator(_target, rawDamage);
 				_target.TakeDamage(calculatedDamage);
-				_unitAnimator[_target.UnitName].SetTrigger("IsHurt");
+				_unitAnimator[_targetInstanceID].SetTrigger("IsHurt");
 
-				CheckDeath(_target);
+				CheckDeath(_target, _targetInstanceID);
 
 				Debug.Log($"Target: {_target.UnitName}; Target HP: {_target.CurrentHealth}");
 				Debug.Log($"{_caster.UnitName} used {_currentSkill.SkillName} on {_target.UnitName}. {_target.UnitName} received {calculatedDamage} damage.");
@@ -421,9 +441,9 @@ public class BattleSkillLogicApplicationState : BattleBaseState
 						int calculatedDamage = PhysicalSkillDamageCalculator(_heroesUnit[i], rawDamage);
 						_heroesUnit[i].TakeDamage(calculatedDamage);
 
-						_unitAnimator[_heroesUnit[i].UnitName].SetTrigger("IsHurt");
+						_unitAnimator[_heroesInstanceIDs[i]].SetTrigger("IsHurt");
 
-						CheckDeath(_heroesUnit[i]);
+						CheckDeath(_heroesUnit[i], _heroesInstanceIDs[i]);
 
 						Debug.Log($"Target: {_heroesUnit[i].UnitName}; Target HP: {_heroesUnit[i].CurrentHealth}");
 						Debug.Log($"{_heroesUnit[i]} received {calculatedDamage} damage.");
@@ -439,9 +459,9 @@ public class BattleSkillLogicApplicationState : BattleBaseState
 						int calculatedDamage = PhysicalSkillDamageCalculator(_enemiesUnit[i], rawDamage);
 						_enemiesUnit[i].TakeDamage(calculatedDamage);
 
-						_unitAnimator[_enemiesUnit[i].UnitName].SetTrigger("IsHurt");
+						_unitAnimator[_enemiesInstanceIDs[i]].SetTrigger("IsHurt");
 
-						CheckDeath(_enemiesUnit[i]);
+						CheckDeath(_enemiesUnit[i], _enemiesInstanceIDs[i]);
 
 						Debug.Log($"Target: {_enemiesUnit[i].UnitName}; Target HP: {_enemiesUnit[i].CurrentHealth}");
 						Debug.Log($"{_enemiesUnit[i]} received {calculatedDamage} damage.");
@@ -470,11 +490,11 @@ public class BattleSkillLogicApplicationState : BattleBaseState
 			Debug.Log($"Target: {_target.UnitName}; Target HP: {_target.CurrentHealth}");
 			_target.TakeDamage(calculatedDamage);
 
-			_unitAnimator[_caster.UnitName].SetTrigger("IsAttacking");
+			_unitAnimator[_casterInstanceID].SetTrigger("IsAttacking");
 
-			_unitAnimator[_target.UnitName].SetTrigger("IsHurt");
+			_unitAnimator[_targetInstanceID].SetTrigger("IsHurt");
 
-			CheckDeath(_target);
+			CheckDeath(_target, _targetInstanceID);
 
 			Debug.Log($"{_target.UnitName} received {calculatedDamage}.");
 			Debug.Log($"Target: {_target.UnitName}; Target HP after hit: {_target.CurrentHealth}");
@@ -482,7 +502,7 @@ public class BattleSkillLogicApplicationState : BattleBaseState
 		else if (_currentSkill is SkillMagical)
 		{
 			SkillMagical currentSkill = _currentSkill as SkillMagical;
-			_unitAnimator[_caster.UnitName].SetTrigger("IsAttacking");
+			_unitAnimator[_casterInstanceID].SetTrigger("IsAttacking");
 
 			if (currentSkill.AoE == AoE.One)
 			{
@@ -491,9 +511,9 @@ public class BattleSkillLogicApplicationState : BattleBaseState
 				int calculatedDamage = MagicalSkillDamageCalculator(_target, rawDamage);
 				_target.TakeDamage(calculatedDamage);
 
-				_unitAnimator[_target.UnitName].SetTrigger("IsHurt");
+				_unitAnimator[_targetInstanceID].SetTrigger("IsHurt");
 
-				CheckDeath(_target);
+				CheckDeath(_target, _targetInstanceID);
 
 				Debug.Log($"{_caster.UnitName} used {_currentSkill.SkillName} on {_target.UnitName}. {_target.UnitName} received {calculatedDamage} damage.");
 				Debug.Log($"Target: {_target.UnitName}; Target HP after hit: {_target.CurrentHealth}");
@@ -509,9 +529,9 @@ public class BattleSkillLogicApplicationState : BattleBaseState
 						int calculatedDamage = MagicalSkillDamageCalculator(_heroesUnit[i], rawDamage);
 						_heroesUnit[i].TakeDamage(calculatedDamage);
 
-						_unitAnimator[_heroesUnit[i].UnitName].SetTrigger("IsHurt");
+						_unitAnimator[_heroesInstanceIDs[i]].SetTrigger("IsHurt");
 
-						CheckDeath(_heroesUnit[i]);
+						CheckDeath(_heroesUnit[i], _heroesInstanceIDs[i]);
 
 						Debug.Log($"Target: {_heroesUnit[i].UnitName}; Target HP: {_heroesUnit[i].CurrentHealth}");
 						Debug.Log($"{_heroesUnit[i]} received {calculatedDamage} damage.");
@@ -526,9 +546,9 @@ public class BattleSkillLogicApplicationState : BattleBaseState
 						int calculatedDamage = MagicalSkillDamageCalculator(_enemiesUnit[i], rawDamage);
 						_enemiesUnit[i].TakeDamage(calculatedDamage);
 
-						_unitAnimator[_enemiesUnit[i].UnitName].SetTrigger("IsHurt");
+						_unitAnimator[_enemiesInstanceIDs[i]].SetTrigger("IsHurt");
 
-						CheckDeath(_enemiesUnit[i]);
+						CheckDeath(_enemiesUnit[i], _enemiesInstanceIDs[i]);
 
 						Debug.Log($"Target: {_enemiesUnit[i].UnitName}; Target HP: {_enemiesUnit[i].CurrentHealth}");
 						Debug.Log($"{_enemiesUnit[i]} received {calculatedDamage} damage.");
@@ -570,6 +590,7 @@ public class BattleSkillLogicApplicationState : BattleBaseState
 			else
 			{
 				_caster.DefenseBuffCount--;
+				Debug.Log($"{_caster.UnitName}'s remaining turn of Defense Buff: {_caster.DefenseBuffCount}");
 			}
 		}
 		if (_caster.AttackBuffCount > 0)
@@ -581,19 +602,21 @@ public class BattleSkillLogicApplicationState : BattleBaseState
 			else
 			{
 				_caster.AttackBuffCount--;
+				Debug.Log($"{_caster.UnitName}'s remaining turn of Attack Buff: {_caster.AttackBuffCount}");
 			}
 		}
 
 		int checkHeroesAliveInt = _heroesUnit.Count;
 		int checkEnemiesAliveInt = _enemiesUnit.Count;
 
-		foreach (KeyValuePair<int, GameObject> kvp in _gameObjectIds)
+		//foreach (KeyValuePair<int, GameObject> kvp in _gameObjectIds)
+		foreach (KeyValuePair<GameObject, int> kvp in _gameObjectIds)
 		{
-			Unit unit = kvp.Value.GetComponent<Unit>();
+			Unit unit = kvp.Key.GetComponent<Unit>();
 
 			if (unit.CurrentHealth == 0)
 			{
-				_gameObjectsState[kvp.Key] = false;
+				_gameObjectsState[kvp.Value] = false;
 
 				if (unit is Hero)
 				{
@@ -613,10 +636,12 @@ public class BattleSkillLogicApplicationState : BattleBaseState
 		if (checkHeroesAliveInt == 0)
 		{
 			Debug.Log("Defeated...");
+			SceneManager.LoadScene("scene-1");
 		}
 		else if (checkEnemiesAliveInt == 0)
 		{
 			Debug.Log("Victory!");
+			SceneManager.LoadScene("scene-1");
 		}
 		else
 		{
@@ -624,12 +649,12 @@ public class BattleSkillLogicApplicationState : BattleBaseState
 		}
 	}
 
-	public void CheckDeath(Unit target)
+	public void CheckDeath(Unit targetUnit, int targetID)
 	{
-		if (target.CurrentHealth == 0)
+		if (targetUnit.CurrentHealth == 0)
 		{
-			_unitAnimator[target.UnitName].SetTrigger("IsDead");
-			_unitGameObjects[target].SetActive(false);
+			_unitAnimator[targetID].SetTrigger("IsDead");
+			_unitGameObjects[targetUnit].SetActive(false);
 		}
 	}
 }

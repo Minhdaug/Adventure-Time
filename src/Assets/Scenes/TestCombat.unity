@@ -804,6 +804,10 @@ MonoBehaviour:
   - {fileID: 9037406505362164820, guid: 32673056568bb274db7083ae6ccd0810, type: 3}
   - {fileID: 3779593470427831478, guid: ed13c3d38b0896b429eb57e9291aa099, type: 3}
   - {fileID: 3289245252859175936, guid: 3e2bcd1d80ee38744b856d722eecbadb, type: 3}
+  - {fileID: 3109003521701068225, guid: ca36b7ea10f53554ca4941daed6a4633, type: 3}
+  - {fileID: 103163741673765677, guid: c9eb9c01ef6698045803ff0b6912f63d, type: 3}
+  - {fileID: 4560090951820761866, guid: b8f5cceebfbd24fc78b8d1f907a8c7be, type: 3}
+  - {fileID: 6013805082330024302, guid: 9ce285e4f85bc3240bab5350bf6cab50, type: 3}
   _speedFrameTransforms:
   - {fileID: 1513306069}
   - {fileID: 2012043045}

@@ -21,6 +21,7 @@ public class BattlePlayerTurnState : BattleBaseState
 	private Dictionary<Unit, GameObject> _heroesSelectFrames = new Dictionary<Unit, GameObject>();
 	private Dictionary<Unit, GameObject> _enemiesSelectFrames = new Dictionary<Unit, GameObject>();
 	private Dictionary<int, bool> _currentStateOfChars = new Dictionary<int, bool>();
+	private Dictionary<int, Tuple<Unit, GameObject>> _gameObjectIDs = new Dictionary<int, Tuple<Unit, GameObject>>();
 	private BattleStateManager _currentState;
 
 	private Coroutine _targetSelectionCoroutine;
@@ -39,11 +40,13 @@ public class BattlePlayerTurnState : BattleBaseState
 			_heroesSelectFrames = state.HeroesButtonsDict;
 			_enemiesSelectFrames = state.EnemiesButtonsDict;
 
-
 			foreach (KeyValuePair<int, bool> kvp in _currentStateOfChars)
 			{
-				Unit target = (EditorUtility.InstanceIDToObject(kvp.Key) as GameObject).GetComponent<Unit>();
+				GameObject tempChar = EditorUtility.InstanceIDToObject(kvp.Key) as GameObject;
+				Unit target = tempChar.GetComponent<Unit>();
 				Dictionary<GameObject, Skill> tempDictButtonSkill = new Dictionary<GameObject, Skill>();
+				Tuple<Unit, GameObject> tempValue = new Tuple<Unit, GameObject>(target, tempChar);
+				_gameObjectIDs.Add(kvp.Key, tempValue);
 
 				if (target is Hero)
 				{
@@ -138,6 +141,15 @@ public class BattlePlayerTurnState : BattleBaseState
 	public void AssignTarget(Unit target, Dictionary<Unit, GameObject> dict)
 	{
 		_currentState.SelectedTarget = target;
+
+		foreach (KeyValuePair<int, Tuple<Unit, GameObject>> kvp in _gameObjectIDs)
+		{
+			if (kvp.Value.Item1 == target)
+			{
+				_currentState.SelectedTargetID = kvp.Value.Item2.GetInstanceID();
+				break;
+			}
+		}
 		SetSelectFrameInactive(dict);
 		_currentState.SwitchState(_currentState.currentSkillLogicApplicationState);
 	}

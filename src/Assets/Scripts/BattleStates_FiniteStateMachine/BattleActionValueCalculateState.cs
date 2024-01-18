@@ -94,6 +94,7 @@ public class BattleActionValueCalculateState : BattleBaseState
 			state.CurrentPlayer = unitStat as Enemy;
 		}
 
+		state.CurrentPlayerID = unitId;
 		_currentSpeedFrames.Add(UnityEngine.Object.Instantiate(unitStat.SpeedFrame, state.SpeedFrameTransform[0]));
 
 		int count = 1;

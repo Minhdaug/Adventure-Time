@@ -28,8 +28,8 @@ public class BattleStateManager : MonoBehaviour
 	//private CombatService _combatService;
 	private JsonDataService _jsonDataService;
 
-	private Dictionary<string, Animator> _unitAnimator = new Dictionary<string, Animator>();
-	public Dictionary<string, Animator> UnitAnimator
+	private Dictionary<int, Animator> _unitAnimator = new Dictionary<int, Animator>();
+	public Dictionary<int, Animator> UnitAnimator
 	{
 		get { return _unitAnimator; }
 		set { _unitAnimator = value; }
@@ -61,6 +61,19 @@ public class BattleStateManager : MonoBehaviour
 		set { _enemiesGO = value; }
 	}
 
+	private List<GameObject> _heroesSpawnGO = new List<GameObject>();
+	public List<GameObject> HeroesSpawnGO
+	{
+		get { return _heroesSpawnGO; }
+		set { _heroesSpawnGO = value; }
+	}
+
+	private List<GameObject> _enemiesSpawnGO = new List<GameObject>();
+	public List<GameObject> EnemiesSpawnGO
+	{
+		get { return _enemiesSpawnGO; }
+		set { _enemiesSpawnGO = value; }
+	}
 
 	private Unit _currentPlayer;
 	public Unit CurrentPlayer
@@ -68,6 +81,14 @@ public class BattleStateManager : MonoBehaviour
 		get { return _currentPlayer; }
 		set { _currentPlayer = value; }
 	}
+
+	private int _currentPlayerID;
+	public int CurrentPlayerID
+	{
+		get { return _currentPlayerID; }
+		set { _currentPlayerID = value; }
+	}
+
 	private Skill _selectedSkill;
 	public Skill SelectedSkill
 	{
@@ -79,6 +100,13 @@ public class BattleStateManager : MonoBehaviour
 	{
 		get { return _selectedTarget; }
 		set { _selectedTarget = value; }
+	}
+
+	private int _selectedTargetID;
+	public int SelectedTargetID
+	{
+		get { return _selectedTargetID; }
+		set { _selectedTargetID = value; }
 	}
 
 	private Dictionary<int, bool> _currentGameObjects = new Dictionary<int, bool>();
@@ -138,52 +166,7 @@ public class BattleStateManager : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
     {
-
 		//Debug.Log($"data: {_jsonDataService.LoadData<Type>("/staticSaveData.json", false)}");
-
-
-		string path = Application.persistentDataPath;
-
-		Debug.Log(path);
-		var files = System.IO.Directory.GetFiles(path);
-		string filePath = path + "\\combatData.json";
-
-		if (files != null)
-		{
-			foreach (var item in files)
-			{
-				//Debug.Log($"item.GetType(): {item.GetType()}");
-
-				//Debug.Log($"item: {item}");
-				//if (item == "combatData.json")
-				//{
-				//	Debug.Log("Found data");
-				//}
-				//Debug.Log($"item: {item}");
-				//Debug.Log($"path + filename: {path + "\\combatData.json"}");
-
-				if (item == filePath)
-				{
-					string jsonContent = System.IO.File.ReadAllText(filePath);
-					CombatData charCombatData = JsonUtility.FromJson<CombatData>(jsonContent);
-		
-					if (charCombatData != null)
-					{
-						foreach (KeyValuePair<string, int> kvp in charCombatData.characterLvl)
-						{
-							Debug.Log($"kvp.Key: {kvp.Key}");
-							Debug.Log($"kvp.Value: {kvp.Value}");
-						}
-
-						foreach(string enemyName in charCombatData.enemiesInAct)
-						{
-							Debug.Log($"enemyName: {enemyName}");
-						}
-					}
-				}
-			}
-		}
-
 
 		InitPrefabs();
 		_skillManager = GetComponentInParent<SkillsManager>();
@@ -199,19 +182,77 @@ public class BattleStateManager : MonoBehaviour
 
     void InitPrefabs()
 	{
+		string path = Application.persistentDataPath;
+
+		Debug.Log(path);
+		var files = System.IO.Directory.GetFiles(path);
+		string filePath = path + "\\combatData.json";
+
+		if (files != null)
+		{
+			foreach (var item in files)
+			{
+				if (item == filePath)
+				{
+					string jsonContent = System.IO.File.ReadAllText(filePath);
+					CombatData charCombatData = JsonUtility.FromJson<CombatData>(jsonContent);
+
+					if (charCombatData != null)
+					{
+						foreach (KeyValuePair<string, int> kvp in charCombatData.characterLvl)
+						{
+							Debug.Log($"kvp.Key: {kvp.Key}");
+
+							foreach (GameObject itemGO in _heroesGO)
+							{
+								Unit itemUnit = itemGO.GetComponent<Unit>();
+
+								if (itemUnit.UnitName == kvp.Key)
+								{
+									_heroesSpawnGO.Add(itemGO);
+								}
+							}
+
+							//if (go != null)
+							//{
+							//	Debug.Log($"go: {go.GetComponent<Unit>().UnitName}");
+							//}
+
+							Debug.Log($"kvp.Value: {kvp.Value}");
+						}
+
+						foreach (string enemyName in charCombatData.enemiesInAct)
+						{
+							Debug.Log($"enemyName: {enemyName}");
+
+							foreach (GameObject itemGO in _enemiesGO)
+							{
+								Unit itemUnit = itemGO.GetComponent<Unit>();
+
+								if (itemUnit.UnitName == enemyName)
+								{
+									_enemiesSpawnGO.Add(itemGO);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
 		int loop_player;
 		int loop_enemy;
-		if (_playerTransforms.Count == _heroesGO.Count || _playerTransforms.Count > _heroesGO.Count)
+		if (_playerTransforms.Count == _heroesSpawnGO.Count || _playerTransforms.Count > _heroesSpawnGO.Count)
 		{
-			loop_player = _heroesGO.Count;
+			loop_player = _heroesSpawnGO.Count;
 		}
 		else
 		{
 			loop_player = _playerTransforms.Count;
 		}
-		if (_enemyTransforms.Count == _enemiesGO.Count || _enemyTransforms.Count > _enemiesGO.Count)
+		if (_enemyTransforms.Count == _enemiesSpawnGO.Count || _enemyTransforms.Count > _enemiesSpawnGO.Count)
 		{
-			loop_enemy = _enemiesGO.Count;
+			loop_enemy = _enemiesSpawnGO.Count;
 		}
 		else
 		{
@@ -220,12 +261,13 @@ public class BattleStateManager : MonoBehaviour
 
 		for (int i = 0; i < loop_player; i++)
 		{
-			GameObject tempGO = Instantiate(_heroesGO[i], _playerTransforms[i]);
+			GameObject tempGO = Instantiate(_heroesSpawnGO[i], _playerTransforms[i]);
 			SpriteRenderer sr = tempGO.GetComponent<SpriteRenderer>();
 
-			Unit tempUnit = tempGO.GetComponent<Unit>();
+			//Unit tempUnit = tempGO.GetComponent<Unit>();
 			Animator tempAnimator = tempGO.GetComponent<Animator>();
-			_unitAnimator.Add(tempUnit.UnitName, tempAnimator);
+			int id = tempGO.GetInstanceID();
+			_unitAnimator.Add(id, tempAnimator);
 
 			if (sr == null)
 			{
@@ -246,7 +288,7 @@ public class BattleStateManager : MonoBehaviour
 					sr.sortingOrder = 2;
 					break;
 			}
-			int id = tempGO.GetInstanceID();
+			//int id = tempGO.GetInstanceID();
 			_currentGameObjects[id] = true;
 
 			GameObject tempSelectFrameGO = Instantiate(_selectFrame, _heroesSelectFrameTransforms[i]);
@@ -255,13 +297,14 @@ public class BattleStateManager : MonoBehaviour
 		}
 		for (int i = 0; i < loop_enemy; i++)
 		{
-			GameObject tempGO = Instantiate(_enemiesGO[i], _enemyTransforms[i]);
+			GameObject tempGO = Instantiate(_enemiesSpawnGO[i], _enemyTransforms[i]);
 			SpriteRenderer sr = tempGO.GetComponent<SpriteRenderer>();
 			sr.sortingLayerName = "Characters";
 
-			Unit tempUnit = tempGO.GetComponent<Unit>();
+			//Unit tempUnit = tempGO.GetComponent<Unit>();
 			Animator tempAnimator = tempGO.GetComponent<Animator>();
-			_unitAnimator.Add(tempUnit.UnitName, tempAnimator);
+			int id = tempGO.GetInstanceID();
+			_unitAnimator.Add(id, tempAnimator);
 
 			if (sr == null)
 			{
@@ -287,7 +330,7 @@ public class BattleStateManager : MonoBehaviour
 					sr.sortingOrder = 2;
 					break;
 			}
-			int id = tempGO.GetInstanceID();
+			//int id = tempGO.GetInstanceID();
 			_currentGameObjects[id] = true;
 
 			GameObject tempSelectFrameGO = Instantiate(_selectFrame, _enemiesSelectFrameTransforms[i]);
