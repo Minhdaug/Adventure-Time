@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/CharAssets/Animations/Enemies/BringerOfDeath/Death.anim.meta
+guid: fa6cbcce651d50049bf64294d06aefe2
+========
+guid: f63695ff90975410eba3ef25fc72ae2b
+>>>>>>>> origin/datnt_combat:Library/PackageCache/com.unity.2d.animation@9.0.4/Samples~/AnimationSamples/2 Single Skinned Sprite/Animation/Plunkah_Idle.anim.meta
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/CharAssets/Animations/Enemies/BringerOfDeath/Bringer-of-Death-SpritSheet_0.controller.meta
+guid: cc6ecfcbc58c3bd43a634cff50fa5190
+========
+guid: 6f66e40006a974303ba7695bfdda0ad4
+>>>>>>>> origin/datnt_combat:Library/PackageCache/com.unity.2d.animation@9.0.4/Samples~/AnimationSamples/1 Simple/Animation/Animators/Boris.controller.meta
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

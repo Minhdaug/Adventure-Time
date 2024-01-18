@@ -1,0 +1,585 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/CharAssets/CharAssets/Sprites/Heroes/Eni/B_witch_death.png.meta
+guid: b65ef27b35f6ff54d9c4fb29bd47661c
+========
+guid: 8b5e2861627a97648bb9400ce9539eac
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Heroes/Eni/B_witch_attack.png.meta
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/CharAssets/CharAssets/Sprites/Heroes/Eni/B_witch_death.png.meta
+      name: B_witch_death_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 528
+        width: 32
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+========
+      name: B_witch_attack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 368
+        width: 104
+        height: 46
+      alignment: 9
+      pivot: {x: 0.1875, y: 0}
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Heroes/Eni/B_witch_attack.png.meta
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/CharAssets/CharAssets/Sprites/Heroes/Eni/B_witch_death.png.meta
+      spriteID: d4227ce0f4f97eb47a942672b2367623
+      internalID: 40768798
+========
+      spriteID: 025783a5beb803841a130972387ddd9e
+      internalID: -1060069739
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Heroes/Eni/B_witch_attack.png.meta
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/CharAssets/CharAssets/Sprites/Heroes/Eni/B_witch_death.png.meta
+      name: B_witch_death_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 32
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+========
+      name: B_witch_attack_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 322
+        width: 104
+        height: 46
+      alignment: 9
+      pivot: {x: 0.1875, y: 0}
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Heroes/Eni/B_witch_attack.png.meta
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/CharAssets/CharAssets/Sprites/Heroes/Eni/B_witch_death.png.meta
+      spriteID: 2d3e47ed7084d454b91c69e4664a1e44
+      internalID: 168818380
+========
+      spriteID: fed6a9c9c4e5ccc4f91848dacb8058c3
+      internalID: -674197584
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Heroes/Eni/B_witch_attack.png.meta
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/CharAssets/CharAssets/Sprites/Heroes/Eni/B_witch_death.png.meta
+      name: B_witch_death_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 432
+        width: 32
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+========
+      name: B_witch_attack_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 276
+        width: 104
+        height: 46
+      alignment: 9
+      pivot: {x: 0.1875, y: 0}
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Heroes/Eni/B_witch_attack.png.meta
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/CharAssets/CharAssets/Sprites/Heroes/Eni/B_witch_death.png.meta
+      spriteID: 8e81b2be143a94041a0f98251736f0bd
+      internalID: 1507163061
+========
+      spriteID: 88b849e5a6d3a124d87250e7ed9fbfce
+      internalID: -1840466827
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Heroes/Eni/B_witch_attack.png.meta
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/CharAssets/CharAssets/Sprites/Heroes/Eni/B_witch_death.png.meta
+      name: B_witch_death_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 32
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+========
+      name: B_witch_attack_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 230
+        width: 104
+        height: 46
+      alignment: 9
+      pivot: {x: 0.1875, y: 0}
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Heroes/Eni/B_witch_attack.png.meta
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/CharAssets/CharAssets/Sprites/Heroes/Eni/B_witch_death.png.meta
+      spriteID: 5185978c29414d148b9e80e07b07533a
+      internalID: 612406692
+========
+      spriteID: 35ef72ce1db7275499e13e6919b89c05
+      internalID: 1983716186
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Heroes/Eni/B_witch_attack.png.meta
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/CharAssets/CharAssets/Sprites/Heroes/Eni/B_witch_death.png.meta
+      name: B_witch_death_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 336
+        width: 32
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+========
+      name: B_witch_attack_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 184
+        width: 104
+        height: 46
+      alignment: 9
+      pivot: {x: 0.1875, y: 0}
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Heroes/Eni/B_witch_attack.png.meta
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/CharAssets/CharAssets/Sprites/Heroes/Eni/B_witch_death.png.meta
+      spriteID: a95ad88f1e1bb404b848d1da01339387
+      internalID: -1462379012
+========
+      spriteID: e93e48ba2cc3d174a882fd3c1f71ab4f
+      internalID: 1884244375
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Heroes/Eni/B_witch_attack.png.meta
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/CharAssets/CharAssets/Sprites/Heroes/Eni/B_witch_death.png.meta
+      name: B_witch_death_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 32
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+========
+      name: B_witch_attack_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 138
+        width: 104
+        height: 46
+      alignment: 9
+      pivot: {x: 0.1875, y: 0}
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Heroes/Eni/B_witch_attack.png.meta
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/CharAssets/CharAssets/Sprites/Heroes/Eni/B_witch_death.png.meta
+      spriteID: 62c7b1b908d066945bd6eaf4d31a5315
+      internalID: -83043462
+========
+      spriteID: 5f159069c3e13744c9487a2f7ea7d33f
+      internalID: -179535210
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Heroes/Eni/B_witch_attack.png.meta
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/CharAssets/CharAssets/Sprites/Heroes/Eni/B_witch_death.png.meta
+      name: B_witch_death_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 32
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+========
+      name: B_witch_attack_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 92
+        width: 104
+        height: 46
+      alignment: 9
+      pivot: {x: 0.1875, y: 0}
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Heroes/Eni/B_witch_attack.png.meta
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/CharAssets/CharAssets/Sprites/Heroes/Eni/B_witch_death.png.meta
+      spriteID: e318c30b66951b940a54d781725868ea
+      internalID: -1465110457
+========
+      spriteID: 44ab1034534782043af0cbaa9c5f0337
+      internalID: 369239903
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Heroes/Eni/B_witch_attack.png.meta
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/CharAssets/CharAssets/Sprites/Heroes/Eni/B_witch_death.png.meta
+      name: B_witch_death_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+========
+      name: B_witch_attack_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 46
+        width: 104
+        height: 46
+      alignment: 9
+      pivot: {x: 0.1875, y: 0}
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Heroes/Eni/B_witch_attack.png.meta
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/CharAssets/CharAssets/Sprites/Heroes/Eni/B_witch_death.png.meta
+      spriteID: cbbf696ef83dd694a8b05ee735128bf8
+      internalID: 917005978
+========
+      spriteID: 529730cb7759ecd40abb12131786867f
+      internalID: -1627455273
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Heroes/Eni/B_witch_attack.png.meta
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/CharAssets/CharAssets/Sprites/Heroes/Eni/B_witch_death.png.meta
+      name: B_witch_death_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 32
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34502b519ccb5d24e9c70f6f3e5c5960
+      internalID: 2052637899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_witch_death_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8afd73762f0bf9445afe34192882178b
+      internalID: 259603881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_witch_death_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 32
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b1e3477fa55d1943892351a715a662a
+      internalID: -1455722488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_witch_death_11
+========
+      name: B_witch_attack_8
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Heroes/Eni/B_witch_attack.png.meta
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/CharAssets/CharAssets/Sprites/Heroes/Eni/B_witch_death.png.meta
+        width: 32
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+========
+        width: 104
+        height: 46
+      alignment: 9
+      pivot: {x: 0.1875, y: 0}
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Heroes/Eni/B_witch_attack.png.meta
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/CharAssets/CharAssets/Sprites/Heroes/Eni/B_witch_death.png.meta
+      spriteID: b9d1dfd9201208441b8216108f0da224
+      internalID: -1540623856
+========
+      spriteID: e870be78e3eeb9a4da0c84c64441bafc
+      internalID: 190012101
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Heroes/Eni/B_witch_attack.png.meta
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/CharAssets/CharAssets/Sprites/Heroes/Eni/B_witch_death.png.meta
+      B_witch_death_0: 40768798
+      B_witch_death_1: 168818380
+      B_witch_death_10: -1455722488
+      B_witch_death_11: -1540623856
+      B_witch_death_2: 1507163061
+      B_witch_death_3: 612406692
+      B_witch_death_4: -1462379012
+      B_witch_death_5: -83043462
+      B_witch_death_6: -1465110457
+      B_witch_death_7: 917005978
+      B_witch_death_8: 2052637899
+      B_witch_death_9: 259603881
+========
+      B_witch_attack_0: -1060069739
+      B_witch_attack_1: -674197584
+      B_witch_attack_2: -1840466827
+      B_witch_attack_3: 1983716186
+      B_witch_attack_4: 1884244375
+      B_witch_attack_5: -179535210
+      B_witch_attack_6: 369239903
+      B_witch_attack_7: -1627455273
+      B_witch_attack_8: 190012101
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Heroes/Eni/B_witch_attack.png.meta
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

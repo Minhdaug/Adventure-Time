@@ -1,0 +1,2419 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/floor/free_torches.png.meta
+guid: 2717c6482b1f6dc4cb97b3277c8acb0e
+========
+guid: c836c03bda3320b4b8d860ca34ab9377
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Mobs/Unused/Crab/Crab_Full_FX.png.meta
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9080173539136732707
+    second: Crab_Full_FX_0
+  - first:
+      213: -4197446653206393682
+    second: Crab_Full_FX_1
+  - first:
+      213: -2989997804993835615
+    second: Crab_Full_FX_2
+  - first:
+      213: -8469797416405215361
+    second: Crab_Full_FX_3
+  - first:
+      213: -4388668328051825002
+    second: Crab_Full_FX_4
+  - first:
+      213: -7474467811743306646
+    second: Crab_Full_FX_5
+  - first:
+      213: -2989557475334638399
+    second: Crab_Full_FX_6
+  - first:
+      213: 6734042502740647996
+    second: Crab_Full_FX_7
+  - first:
+      213: -5995747593104664643
+    second: Crab_Full_FX_8
+  - first:
+      213: 4119977806082904002
+    second: Crab_Full_FX_9
+  - first:
+      213: -1959542760478502756
+    second: Crab_Full_FX_10
+  - first:
+      213: -1159844225290200420
+    second: Crab_Full_FX_11
+  - first:
+      213: 4740876748918913810
+    second: Crab_Full_FX_12
+  - first:
+      213: 2532760549911205632
+    second: Crab_Full_FX_13
+  - first:
+      213: -1728484942998651861
+    second: Crab_Full_FX_14
+  - first:
+      213: 1278166167446601143
+    second: Crab_Full_FX_15
+  - first:
+      213: 9175894396951214332
+    second: Crab_Full_FX_16
+  - first:
+      213: -2642614011347458476
+    second: Crab_Full_FX_17
+  - first:
+      213: 4219581327632244068
+    second: Crab_Full_FX_18
+  - first:
+      213: 5994195631008817841
+    second: Crab_Full_FX_19
+  - first:
+      213: -8385728130833230514
+    second: Crab_Full_FX_20
+  - first:
+      213: -3796880412438209202
+    second: Crab_Full_FX_21
+  - first:
+      213: -6459756130975535394
+    second: Crab_Full_FX_22
+  - first:
+      213: -6321268472545852005
+    second: Crab_Full_FX_23
+  - first:
+      213: -5688585764401755346
+    second: Crab_Full_FX_24
+  - first:
+      213: -5033067315390054956
+    second: Crab_Full_FX_25
+  - first:
+      213: -5544947687499173948
+    second: Crab_Full_FX_26
+  - first:
+      213: 1479640082977738138
+    second: Crab_Full_FX_27
+  - first:
+      213: -6956077721881788176
+    second: Crab_Full_FX_28
+  - first:
+      213: -1413250204750855310
+    second: Crab_Full_FX_29
+  - first:
+      213: 402077100083727717
+    second: Crab_Full_FX_30
+  - first:
+      213: 5122645827168067529
+    second: Crab_Full_FX_31
+  - first:
+      213: -4728387533130541574
+    second: Crab_Full_FX_32
+  - first:
+      213: 5587196446251493093
+    second: Crab_Full_FX_33
+  - first:
+      213: -7123878723729968132
+    second: Crab_Full_FX_34
+  - first:
+      213: 2776659080565900591
+    second: Crab_Full_FX_35
+  - first:
+      213: -743451368438695
+    second: Crab_Full_FX_36
+  - first:
+      213: -2366003308275606298
+    second: Crab_Full_FX_37
+  - first:
+      213: 415271487617655064
+    second: Crab_Full_FX_38
+  - first:
+      213: -4567213849314361845
+    second: Crab_Full_FX_39
+  - first:
+      213: -3545365322281616800
+    second: Crab_Full_FX_40
+  - first:
+      213: 6830456295098374805
+    second: Crab_Full_FX_41
+  - first:
+      213: 3277465764251237765
+    second: Crab_Full_FX_42
+  - first:
+      213: -6620812245928047624
+    second: Crab_Full_FX_43
+  - first:
+      213: 5873883537323249734
+    second: Crab_Full_FX_44
+  - first:
+      213: 2781439339986316928
+    second: Crab_Full_FX_45
+  - first:
+      213: 2285581075736859926
+    second: Crab_Full_FX_46
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/floor/free_torches.png.meta
+      name: free_torches_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f23175ab93771884091fd6352bcc4d61
+      internalID: -1343122392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_torches_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 224
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a02404c3f0e37d7479bd84b8db0c5109
+      internalID: 1969170075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_torches_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df7849ac4a0d4444690ec60e8ac00694
+      internalID: -683394901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_torches_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 224
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad2836082fa10b442aa38e5cd4d88faf
+      internalID: 1131462295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_torches_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c06663a8eb76aa542863dd930ba318c5
+      internalID: -718691992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_torches_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 224
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4976144e477549e448bb700f57856eb3
+      internalID: -1718791343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_torches_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57e449399eb2bf34ab32406fec0af9e1
+      internalID: 391318484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_torches_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 224
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f27db2c3d6434d5498dfcb6d06c37899
+      internalID: 619664979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_torches_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c78a359640dea4f4990f7ab55f8d9932
+      internalID: -1427852536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_torches_9
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 224
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 249b8dce887ebfa40a77c11278039528
+      internalID: -1981661947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_torches_10
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dcf7fae0dae31641ad5ea335dbfbf24
+      internalID: 1097860408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_torches_11
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 224
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f229ac41920966c44ad82f1449ed5d09
+      internalID: 1866994746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_torches_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42c4ecf943d944e4792afa696d516efc
+      internalID: 997491677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_torches_13
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 192
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9f4abb3c1fd61b4b8f0b31be1897af1
+      internalID: -249136286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_torches_14
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 832e320454236dc46bc770c5d70401ac
+      internalID: 1653137022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_torches_15
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 192
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d1e891d237c7ff459ff8adcb1db8363
+      internalID: -1737160498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_torches_16
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa73ae0bc4926cb4d8ea2d8860450b3c
+      internalID: -557911152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_torches_17
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 192
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfa481a12fbdbb948b5b93810b48640f
+      internalID: -575935187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_torches_18
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e23fd8dd2eead842b871e3061d5d171
+      internalID: -1996911692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_torches_19
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 192
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09b84320f8183f042a33f52ce68dead4
+      internalID: -843552173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_torches_20
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c017bdb0f7f0fc94185b6e0c1a0ad9a4
+      internalID: 1188151407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_torches_21
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 192
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e404302040777e45ae1853773147e15
+      internalID: 1470461643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_torches_22
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccbc591d41ce7fb4c958baf1c77dc2e7
+      internalID: 1686955224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_torches_23
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 192
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 846d3e76083a37d42a3eee38f35650ee
+      internalID: -1383417955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_torches_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 16
+        height: 32
+========
+      name: Crab_Full_FX_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 64
+        height: 64
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Mobs/Unused/Crab/Crab_Full_FX.png.meta
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/floor/free_torches.png.meta
+      spriteID: 3abaf3d67d717fe42afabf63587a57a9
+      internalID: 1176082511
+========
+      spriteID: 32e752b99b1430e70800000000000000
+      internalID: 9080173539136732707
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Mobs/Unused/Crab/Crab_Full_FX.png.meta
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/floor/free_torches.png.meta
+      name: free_torches_25
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 160
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fec0052553afb9d498cfd6e1f125181f
+      internalID: 217661876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_torches_26
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dfa599ba2ceec942bbe9386407d28d1
+      internalID: -2053971652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_torches_27
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 160
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 854f0d2ccfff24949a23411da783a4da
+      internalID: 2014531971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_torches_28
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 16
+        height: 32
+========
+      name: Crab_Full_FX_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 384
+        width: 64
+        height: 64
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Mobs/Unused/Crab/Crab_Full_FX.png.meta
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/floor/free_torches.png.meta
+      spriteID: f169d3e1bce412442acaa379470b43f5
+      internalID: -1100663322
+========
+      spriteID: eac0bf7028cafb5c0800000000000000
+      internalID: -4197446653206393682
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Mobs/Unused/Crab/Crab_Full_FX.png.meta
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/floor/free_torches.png.meta
+      name: free_torches_29
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 160
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 824af8f14152c7a439f1db78cbb24f26
+      internalID: 1831586767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_torches_30
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 136e938a73ff23545a952894dcce1c18
+      internalID: 233390326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_torches_31
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 160
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19d8315b34bfb014b8efd66ee955dc8b
+      internalID: -87428553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_torches_32
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 16
+        height: 32
+========
+      name: Crab_Full_FX_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 64
+        height: 64
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Mobs/Unused/Crab/Crab_Full_FX.png.meta
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/floor/free_torches.png.meta
+      spriteID: b21e01ead378c5e47a79095e860cbcd5
+      internalID: -2080876927
+========
+      spriteID: 1ad052a86d46186d0800000000000000
+      internalID: -2989997804993835615
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Mobs/Unused/Crab/Crab_Full_FX.png.meta
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/floor/free_torches.png.meta
+      name: free_torches_33
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 160
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24eeca29d1f5acf4fad6f2937e954021
+      internalID: -820881725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_torches_34
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1321a30887ed1e429787deb5f41a0c3
+      internalID: -1650930660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_torches_35
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 160
+        width: 16
+        height: 32
+========
+      name: Crab_Full_FX_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 384
+        width: 64
+        height: 64
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Mobs/Unused/Crab/Crab_Full_FX.png.meta
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/floor/free_torches.png.meta
+      spriteID: 57981746d76790249affc79b06f98ca1
+      internalID: -49643439
+========
+      spriteID: f7755abef1c357a80800000000000000
+      internalID: -8469797416405215361
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Mobs/Unused/Crab/Crab_Full_FX.png.meta
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/floor/free_torches.png.meta
+      name: free_torches_36
+========
+      name: Crab_Full_FX_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 696a67568615813c0800000000000000
+      internalID: -4388668328051825002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crab_Full_FX_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6ce2fb602b554890800000000000000
+      internalID: -7474467811743306646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crab_Full_FX_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c4b017c055f286d0800000000000000
+      internalID: -2989557475334638399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crab_Full_FX_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c302d3e4aff147d50800000000000000
+      internalID: 6734042502740647996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crab_Full_FX_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db7d716b453dacca0800000000000000
+      internalID: -5995747593104664643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crab_Full_FX_9
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf801e6cf91d2930800000000000000
+      internalID: 4119977806082904002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crab_Full_FX_10
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c909d7fcd3e4ec4e0800000000000000
+      internalID: -1959542760478502756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crab_Full_FX_11
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9a1acc72d767efe0800000000000000
+      internalID: -1159844225290200420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crab_Full_FX_12
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21b783fe84afac140800000000000000
+      internalID: 4740876748918913810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crab_Full_FX_13
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 007949e0d4c262320800000000000000
+      internalID: 2532760549911205632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crab_Full_FX_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2c34fc2a103308e0800000000000000
+      internalID: -1728484942998651861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crab_Full_FX_15
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bdb3967b55fcb110800000000000000
+      internalID: 1278166167446601143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crab_Full_FX_16
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf836ca8653575f70800000000000000
+      internalID: 9175894396951214332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crab_Full_FX_17
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4562a2fce8c835bd0800000000000000
+      internalID: -2642614011347458476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crab_Full_FX_18
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46d14667cd6fe8a30800000000000000
+      internalID: 4219581327632244068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crab_Full_FX_19
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b2aa74fa29af2350800000000000000
+      internalID: 5994195631008817841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crab_Full_FX_20
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e455faac1b8ef9b80800000000000000
+      internalID: -8385728130833230514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crab_Full_FX_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4d5bf1b165ce4bc0800000000000000
+      internalID: -3796880412438209202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crab_Full_FX_22
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ede2d8d26065a56a0800000000000000
+      internalID: -6459756130975535394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crab_Full_FX_23
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b954704d0d75648a0800000000000000
+      internalID: -6321268472545852005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crab_Full_FX_24
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2b4d7ef2651e01b0800000000000000
+      internalID: -5688585764401755346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crab_Full_FX_25
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ddfb8761f3f62ab0800000000000000
+      internalID: -5033067315390054956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crab_Full_FX_26
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cfec74e4736c03b0800000000000000
+      internalID: -5544947687499173948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crab_Full_FX_27
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9d4155e0dcb88410800000000000000
+      internalID: 1479640082977738138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crab_Full_FX_28
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Mobs/Unused/Crab/Crab_Full_FX.png.meta
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/floor/free_torches.png.meta
+        width: 16
+        height: 32
+========
+        width: 64
+        height: 64
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Mobs/Unused/Crab/Crab_Full_FX.png.meta
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/floor/free_torches.png.meta
+      spriteID: 4caa2914b32a49244af6e619aa0dfc0d
+      internalID: -301146799
+========
+      spriteID: 0f04a35ba2c077f90800000000000000
+      internalID: -6956077721881788176
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Mobs/Unused/Crab/Crab_Full_FX.png.meta
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/floor/free_torches.png.meta
+      name: free_torches_37
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 128
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d802ab21fb761bd4482f5a39ec0d46f9
+      internalID: 741184284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_torches_38
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 651f6d04b29cb4649bc5e8f3ab38886c
+      internalID: -1706037870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_torches_39
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 128
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f0842d031690964ab3366afb5c3cddb
+      internalID: -243318079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_torches_40
+========
+      name: Crab_Full_FX_29
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Mobs/Unused/Crab/Crab_Full_FX.png.meta
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/floor/free_torches.png.meta
+        width: 16
+        height: 32
+========
+        width: 64
+        height: 64
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Mobs/Unused/Crab/Crab_Full_FX.png.meta
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/floor/free_torches.png.meta
+      spriteID: ae5188547ba525b4f9ecc0280b55207b
+      internalID: 1578699590
+========
+      spriteID: 273c31f2d60236ce0800000000000000
+      internalID: -1413250204750855310
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Mobs/Unused/Crab/Crab_Full_FX.png.meta
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/floor/free_torches.png.meta
+      name: free_torches_41
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 128
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60e3b8f6e4256c3458e4f4e7b80b7bd9
+      internalID: -619165238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_torches_42
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aeaafda240855e41b66673715d7cb38
+      internalID: -494625250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_torches_43
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 128
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10bc023a20878d544925beb6a3ce913b
+      internalID: 178273745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_torches_44
+========
+      name: Crab_Full_FX_30
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Mobs/Unused/Crab/Crab_Full_FX.png.meta
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/floor/free_torches.png.meta
+        width: 16
+        height: 32
+========
+        width: 64
+        height: 64
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Mobs/Unused/Crab/Crab_Full_FX.png.meta
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/floor/free_torches.png.meta
+      spriteID: eeb80c3b23b242a4a925524fa57d7989
+      internalID: -1662366804
+========
+      spriteID: 56d4fc20ef6749500800000000000000
+      internalID: 402077100083727717
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Mobs/Unused/Crab/Crab_Full_FX.png.meta
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/floor/free_torches.png.meta
+      name: free_torches_45
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 128
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04a129db64146f944bac0e80e81ab2a0
+      internalID: -1951277252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_torches_46
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82bce566f81b69f4eac739966fefa411
+      internalID: -332769785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_torches_47
+========
+      name: Crab_Full_FX_31
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Mobs/Unused/Crab/Crab_Full_FX.png.meta
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 128
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/floor/free_torches.png.meta
+        width: 16
+        height: 32
+========
+        width: 64
+        height: 64
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Mobs/Unused/Crab/Crab_Full_FX.png.meta
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/floor/free_torches.png.meta
+      spriteID: f751ec83f1f69984db47cfd332ea2e53
+      internalID: -2043757074
+========
+      spriteID: 9cf5d762d3b471740800000000000000
+      internalID: 5122645827168067529
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Mobs/Unused/Crab/Crab_Full_FX.png.meta
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/floor/free_torches.png.meta
+      name: free_torches_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 16
+        height: 32
+========
+      name: Crab_Full_FX_32
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af55e573794616eb0800000000000000
+      internalID: -4728387533130541574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crab_Full_FX_33
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 64
+        height: 64
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Mobs/Unused/Crab/Crab_Full_FX.png.meta
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/floor/free_torches.png.meta
+      spriteID: d97651d76e36a7a49a7c62644d24f215
+      internalID: 24892198
+========
+      spriteID: 5e6252dc095b98d40800000000000000
+      internalID: 5587196446251493093
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Mobs/Unused/Crab/Crab_Full_FX.png.meta
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/floor/free_torches.png.meta
+      name: free_torches_49
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 96
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b10d31d46cdcdb4fb749a87af3c24b0
+      internalID: 100973270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: free_torches_50
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 16
+        height: 32
+========
+      name: Crab_Full_FX_34
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 64
+        height: 64
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Mobs/Unused/Crab/Crab_Full_FX.png.meta
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/floor/free_torches.png.meta
+      spriteID: a79e99fc9fe35bc42bf3e63e3b2c40c8
+      internalID: 814888042
+========
+      spriteID: cf3bc117b06e22d90800000000000000
+      internalID: -7123878723729968132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crab_Full_FX_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f254e7fe8bca88620800000000000000
+      internalID: 2776659080565900591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crab_Full_FX_36
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 954c64db5db5dfff0800000000000000
+      internalID: -743451368438695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crab_Full_FX_37
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ec55d8d6844a2fd0800000000000000
+      internalID: -2366003308275606298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crab_Full_FX_38
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8116cc0c73753c500800000000000000
+      internalID: 415271487617655064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crab_Full_FX_39
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e7f52c33ffd90c0800000000000000
+      internalID: -4567213849314361845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crab_Full_FX_40
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06a7a6606055ccec0800000000000000
+      internalID: -3545365322281616800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crab_Full_FX_41
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59a5b23afc7aace50800000000000000
+      internalID: 6830456295098374805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crab_Full_FX_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58df2b17fb5eb7d20800000000000000
+      internalID: 3277465764251237765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crab_Full_FX_43
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fb07e447562e14a0800000000000000
+      internalID: -6620812245928047624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crab_Full_FX_44
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 640da2eb4f9348150800000000000000
+      internalID: 5873883537323249734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crab_Full_FX_45
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08e6e20d758a99620800000000000000
+      internalID: 2781439339986316928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crab_Full_FX_46
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61596acf0e308bf10800000000000000
+      internalID: 2285581075736859926
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Mobs/Unused/Crab/Crab_Full_FX.png.meta
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/floor/free_torches.png.meta
+      free_torches_0: -1343122392
+      free_torches_1: 1969170075
+      free_torches_10: 1097860408
+      free_torches_11: 1866994746
+      free_torches_12: 997491677
+      free_torches_13: -249136286
+      free_torches_14: 1653137022
+      free_torches_15: -1737160498
+      free_torches_16: -557911152
+      free_torches_17: -575935187
+      free_torches_18: -1996911692
+      free_torches_19: -843552173
+      free_torches_2: -683394901
+      free_torches_20: 1188151407
+      free_torches_21: 1470461643
+      free_torches_22: 1686955224
+      free_torches_23: -1383417955
+      free_torches_24: 1176082511
+      free_torches_25: 217661876
+      free_torches_26: -2053971652
+      free_torches_27: 2014531971
+      free_torches_28: -1100663322
+      free_torches_29: 1831586767
+      free_torches_3: 1131462295
+      free_torches_30: 233390326
+      free_torches_31: -87428553
+      free_torches_32: -2080876927
+      free_torches_33: -820881725
+      free_torches_34: -1650930660
+      free_torches_35: -49643439
+      free_torches_36: -301146799
+      free_torches_37: 741184284
+      free_torches_38: -1706037870
+      free_torches_39: -243318079
+      free_torches_4: -718691992
+      free_torches_40: 1578699590
+      free_torches_41: -619165238
+      free_torches_42: -494625250
+      free_torches_43: 178273745
+      free_torches_44: -1662366804
+      free_torches_45: -1951277252
+      free_torches_46: -332769785
+      free_torches_47: -2043757074
+      free_torches_48: 24892198
+      free_torches_49: 100973270
+      free_torches_5: -1718791343
+      free_torches_50: 814888042
+      free_torches_6: 391318484
+      free_torches_7: 619664979
+      free_torches_8: -1427852536
+      free_torches_9: -1981661947
+========
+      Crab_Full_FX_0: 9080173539136732707
+      Crab_Full_FX_1: -4197446653206393682
+      Crab_Full_FX_10: -1959542760478502756
+      Crab_Full_FX_11: -1159844225290200420
+      Crab_Full_FX_12: 4740876748918913810
+      Crab_Full_FX_13: 2532760549911205632
+      Crab_Full_FX_14: -1728484942998651861
+      Crab_Full_FX_15: 1278166167446601143
+      Crab_Full_FX_16: 9175894396951214332
+      Crab_Full_FX_17: -2642614011347458476
+      Crab_Full_FX_18: 4219581327632244068
+      Crab_Full_FX_19: 5994195631008817841
+      Crab_Full_FX_2: -2989997804993835615
+      Crab_Full_FX_20: -8385728130833230514
+      Crab_Full_FX_21: -3796880412438209202
+      Crab_Full_FX_22: -6459756130975535394
+      Crab_Full_FX_23: -6321268472545852005
+      Crab_Full_FX_24: -5688585764401755346
+      Crab_Full_FX_25: -5033067315390054956
+      Crab_Full_FX_26: -5544947687499173948
+      Crab_Full_FX_27: 1479640082977738138
+      Crab_Full_FX_28: -6956077721881788176
+      Crab_Full_FX_29: -1413250204750855310
+      Crab_Full_FX_3: -8469797416405215361
+      Crab_Full_FX_30: 402077100083727717
+      Crab_Full_FX_31: 5122645827168067529
+      Crab_Full_FX_32: -4728387533130541574
+      Crab_Full_FX_33: 5587196446251493093
+      Crab_Full_FX_34: -7123878723729968132
+      Crab_Full_FX_35: 2776659080565900591
+      Crab_Full_FX_36: -743451368438695
+      Crab_Full_FX_37: -2366003308275606298
+      Crab_Full_FX_38: 415271487617655064
+      Crab_Full_FX_39: -4567213849314361845
+      Crab_Full_FX_4: -4388668328051825002
+      Crab_Full_FX_40: -3545365322281616800
+      Crab_Full_FX_41: 6830456295098374805
+      Crab_Full_FX_42: 3277465764251237765
+      Crab_Full_FX_43: -6620812245928047624
+      Crab_Full_FX_44: 5873883537323249734
+      Crab_Full_FX_45: 2781439339986316928
+      Crab_Full_FX_46: 2285581075736859926
+      Crab_Full_FX_5: -7474467811743306646
+      Crab_Full_FX_6: -2989557475334638399
+      Crab_Full_FX_7: 6734042502740647996
+      Crab_Full_FX_8: -5995747593104664643
+      Crab_Full_FX_9: 4119977806082904002
+>>>>>>>> origin/datnt_combat:Assets/Sprites/Mobs/Unused/Crab/Crab_Full_FX.png.meta
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Library/PackageCache/com.unity.2d.animation@9.0.4/Editor/SkinningModule/CharAssets/Animations/Enemies/BringerOfDeath/HeraldOfDeath_Death.anim.meta
+guid: 5435d7130bce0874782ea2b574163049
+========
+guid: 51c998710c4a24557aa3ee88cb6ac410
+>>>>>>>> origin/datnt_combat:Library/PackageCache/com.unity.2d.animation@9.0.4/Samples~/AnimationSamples/1 Simple/Animation/Clips/Boris Move.anim.meta
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
