@@ -73,7 +73,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 855594103
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 4058254702925930087, guid: 711e7a3687098e244af170961d47210f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -96,7 +96,7 @@ Animator:
   m_GameObject: {fileID: 3779593470427831478}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: eee5ae94b5fdd4949a11c40843de3ff3, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0657fff196fddec48b1b3ab53a633f2a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -129,3 +129,7 @@ MonoBehaviour:
   _characterElemType: 2
   _selectionFrame: {fileID: 2407623222020858175, guid: ebac799ad22de79449f9f55e9ed24df6, type: 3}
   _speedFrame: {fileID: 815696554123113761, guid: b8f3e92a35805574d91a2ca069f028a0, type: 3}
+  _isAttackBuff: 0
+  _attackBuffCount: 0
+  _isDefenseBuff: 0
+  _defenseBuffCount: 0

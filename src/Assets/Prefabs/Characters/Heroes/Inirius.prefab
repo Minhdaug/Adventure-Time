@@ -72,8 +72,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 855594103
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 4723107735738678597, guid: 6fc66c021eec74942b4e71a3fde4dc04, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -129,10 +129,6 @@ MonoBehaviour:
   _characterElemType: 0
   _selectionFrame: {fileID: 2407623222020858175, guid: ebac799ad22de79449f9f55e9ed24df6, type: 3}
   _speedFrame: {fileID: 3575320960208918012, guid: e6a4397e95821ca4ca11199644a58d43, type: 3}
-  _isAttackBuff: 1
-  _attackBuffCount: 3
-  _isDefenseBuff: 1
-  _defenseBuffCount: 3
   _playerSpeedAdvantage: 5
   _itemBonusStrength: 0
   _bonusArmor: 5

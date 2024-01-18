@@ -185,22 +185,21 @@ public class Hero : Unit
 
 	public override int NormalDamageOutput()
 	{
-		//Debug.Log($"_itemBonusStrength in NormalDamageOutput: {_itemBonusStrength}");
-		//Debug.Log($"_currentStrength in NormalDamageOutput: {_currentStrength}");
-		//Debug.Log($"Mathf.Sqrt(_currentStrength): {Mathf.Sqrt(0.5f * _itemBonusStrength)}");
-		//Debug.Log($"Mathf.Sqrt(_currentStrength): {Mathf.Sqrt(_currentStrength)}");
-		int rawDamage = (int)(Mathf.Sqrt(0.5f * _itemBonusStrength) + Mathf.Sqrt(_currentStrength));
-		return rawDamage;
+		//int rawDamage = (int)(_itemBonusStrength / 2 + _currentStrength);
+		//int rawDamage = (int)(Mathf.Sqrt(0.5f * _itemBonusStrength) + Mathf.Sqrt(_currentStrength));
+		return (int)(_itemBonusStrength / 2 + _currentStrength);
 	}
 
 	public override int PhysicalDamageOutput(SkillPhysical skill)
 	{
-		return (int)(Mathf.Sqrt(skill.SkillStat) + Mathf.Sqrt(_currentStrength));
+		//return (int)(Mathf.Sqrt(skill.SkillStat) + Mathf.Sqrt(_currentStrength));
+		return (int)(skill.SkillStat + _currentStrength);
 	}
 
 	public override int MagicalDamageOutput(ElementType target, SkillMagical skill)
 	{
-		return (int)(Mathf.Sqrt(skill.SkillStat) + Mathf.Sqrt(_currentMagic));
+		return (int)(skill.SkillStat + _currentMagic);
+		//return (int)(Mathf.Sqrt(skill.SkillStat) + Mathf.Sqrt(_currentMagic));
 	}
 
 	public static bool IsPrime(int number)

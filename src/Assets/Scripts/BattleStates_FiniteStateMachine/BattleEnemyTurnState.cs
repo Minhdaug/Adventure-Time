@@ -54,8 +54,6 @@ public class BattleEnemyTurnState : BattleBaseState
 
 		Skill skill = state.SelectedSkill;
 
-		Debug.Log($"{skill.SkillName}, {skill.GetType()}");
-
 		if (skill is SkillPhysical || skill is SkillMagical || skill is NormalAttack)
 		{
 			int targetHeroIndex = Random.Range(0, _heroUnit.Count);

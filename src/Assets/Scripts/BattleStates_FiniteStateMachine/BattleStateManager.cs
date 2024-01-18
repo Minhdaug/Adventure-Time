@@ -1,8 +1,11 @@
+using Assets.script.model;
+using Assets.script.services;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Windows;
 
 public class BattleStateManager : MonoBehaviour
 {
@@ -15,6 +18,15 @@ public class BattleStateManager : MonoBehaviour
     public BattlePlayerTurnState currentPlayerTurnState = new BattlePlayerTurnState();
     public BattleAnimationState currentAnimationState = new BattleAnimationState();
     private SkillsManager _skillManager;
+
+	public class CharacterCombatData 
+	{
+		public readonly Dictionary<string, int> characterLvl = new Dictionary<string, int>();
+		public readonly List<string> enemiesInAct = new List<string>();
+	}
+
+	//private CombatService _combatService;
+	private JsonDataService _jsonDataService;
 
 	private Dictionary<string, Animator> _unitAnimator = new Dictionary<string, Animator>();
 	public Dictionary<string, Animator> UnitAnimator
@@ -40,11 +52,13 @@ public class BattleStateManager : MonoBehaviour
 	public List<GameObject> HeroesGO
 	{
 		get { return _heroesGO; }
+		set { _heroesGO = value; }
 	}
 	[SerializeField] List<GameObject> _enemiesGO;
 	public List<GameObject> EnemiesGO
 	{
 		get { return _enemiesGO; }
+		set { _enemiesGO = value; }
 	}
 
 
@@ -124,10 +138,62 @@ public class BattleStateManager : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
     {
+
+		//Debug.Log($"data: {_jsonDataService.LoadData<Type>("/staticSaveData.json", false)}");
+
+
+		string path = Application.persistentDataPath;
+
+		Debug.Log(path);
+		var files = System.IO.Directory.GetFiles(path);
+		string filePath = path + "\\combatData.json";
+
+		if (files != null)
+		{
+			foreach (var item in files)
+			{
+				//Debug.Log($"item.GetType(): {item.GetType()}");
+
+				//Debug.Log($"item: {item}");
+				//if (item == "combatData.json")
+				//{
+				//	Debug.Log("Found data");
+				//}
+				//Debug.Log($"item: {item}");
+				//Debug.Log($"path + filename: {path + "\\combatData.json"}");
+
+				if (item == filePath)
+				{
+					string jsonContent = System.IO.File.ReadAllText(filePath);
+					CombatData charCombatData = JsonUtility.FromJson<CombatData>(jsonContent);
+		
+					if (charCombatData != null)
+					{
+						foreach (KeyValuePair<string, int> kvp in charCombatData.characterLvl)
+						{
+							Debug.Log($"kvp.Key: {kvp.Key}");
+							Debug.Log($"kvp.Value: {kvp.Value}");
+						}
+
+						foreach(string enemyName in charCombatData.enemiesInAct)
+						{
+							Debug.Log($"enemyName: {enemyName}");
+						}
+					}
+				}
+			}
+		}
+
+
 		InitPrefabs();
 		_skillManager = GetComponentInParent<SkillsManager>();
+		//Debug.Log(files);
 
-        _currentBattleState = currentActionValueCalculateState;
+		//var data = _jsonDataService.LoadData<Type>("/staticSaveData.json", false);
+
+		//Debug.Log(data);
+
+		_currentBattleState = currentActionValueCalculateState;
         _currentBattleState.EnterState(this, _currentGameObjects);
     }
 
@@ -235,9 +301,4 @@ public class BattleStateManager : MonoBehaviour
         _currentBattleState = state;
         _currentBattleState.EnterState(this, _currentGameObjects);
     }
-
-	public void AssignSwitchStateOnEndAnimation(Animator animator)
-	{
-
-	}
 }

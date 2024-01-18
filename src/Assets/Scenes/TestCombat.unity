@@ -345,7 +345,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: -84041801
-  m_SortingOrder: 2
+  m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &319162438
 RectTransform:
@@ -799,10 +799,10 @@ MonoBehaviour:
   - {fileID: 927971521786398942, guid: c073934645f969d4ca27dc9e294dfb4e, type: 3}
   - {fileID: 648259716827134367, guid: cc49f2aaeb2af404fa6932b3bc6f21b9, type: 3}
   _enemiesGO:
-  - {fileID: 5639322842300420404, guid: c71df0da875446e4c95206c533d41925, type: 3}
+  - {fileID: 5639322842300420404, guid: 09d392b00b83c0f4d9609143325d8363, type: 3}
   - {fileID: 1420038280205253365, guid: 875510165b941f04e9cd4bba925695fb, type: 3}
   - {fileID: 9037406505362164820, guid: 32673056568bb274db7083ae6ccd0810, type: 3}
-  - {fileID: 3779593470427831478, guid: e1cd8c58e1d5ba040a7d8e363b9a8a85, type: 3}
+  - {fileID: 3779593470427831478, guid: ed13c3d38b0896b429eb57e9291aa099, type: 3}
   - {fileID: 3289245252859175936, guid: 3e2bcd1d80ee38744b856d722eecbadb, type: 3}
   _speedFrameTransforms:
   - {fileID: 1513306069}
@@ -1308,7 +1308,7 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 1
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 1210720451
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!1 &1293207368
