@@ -268,12 +268,12 @@ public class BattleSkillLogicApplicationState : BattleBaseState
 	{
 		//Debug.Log("Entered SkillLogicApplicationState - Update State");
 
-		Debug.Log($"{_unitAnimator.Count}");
+		//Debug.Log($"{_unitAnimator.Count}");
 
-		foreach (KeyValuePair<int, Animator> kvp in _unitAnimator)
-		{
-			Debug.Log($"{kvp.Key}, {kvp.Value}");
-		}
+		//foreach (KeyValuePair<int, Animator> kvp in _unitAnimator)
+		//{
+		//	Debug.Log($"{kvp.Key}, {kvp.Value}");
+		//}
 
 		if (_currentSkill is SkillBuff)
 		{
@@ -296,6 +296,7 @@ public class BattleSkillLogicApplicationState : BattleBaseState
 						_recentlyCastAttackBuff = true;
 					}
 					Debug.Log($"{_caster.UnitName} used {_currentSkill.SkillName} on {_target.UnitName}. {_target.UnitName} has gained {_currentSkill.SkillName} for {_target.AttackBuffCount} turn.");
+					state.CombatLogText.SetText($"{_caster.UnitName} used {_currentSkill.SkillName} on {_target.UnitName}. {_target.UnitName} has gained {_currentSkill.SkillName} for {_target.AttackBuffCount} turn.");
 				}
 				else if (currentSkill.BuffType == Buffs.Defense)
 				{
@@ -307,6 +308,7 @@ public class BattleSkillLogicApplicationState : BattleBaseState
 						_recentlyCastDefenseBuff = true;
 					}
 					Debug.Log($"{_caster.UnitName} used {_currentSkill.SkillName} on {_target.UnitName}. {_target.UnitName} has gained {_currentSkill.SkillName} for {_target.DefenseBuffCount} turn.");
+					state.CombatLogText.SetText($"{_caster.UnitName} used {_currentSkill.SkillName} on {_target.UnitName}. {_target.UnitName} has gained {_currentSkill.SkillName} for {_target.DefenseBuffCount} turn.");
 				}
 			} 
 			else if (currentSkill.AoE == AoE.All)
@@ -326,6 +328,7 @@ public class BattleSkillLogicApplicationState : BattleBaseState
 						Hero target = _target as Hero;
 
 						Debug.Log($"{_caster.UnitName} used {_currentSkill.SkillName} on teammates. All heroes gained {_currentSkill.SkillName} for {target.AttackBuffCount} turn.");
+						state.CombatLogText.SetText($"{_caster.UnitName} used {_currentSkill.SkillName} on teammates. All heroes gained {_currentSkill.SkillName} for {target.AttackBuffCount} turn.");
 					}
 					else if (_target is Enemy)
 					{
@@ -338,6 +341,7 @@ public class BattleSkillLogicApplicationState : BattleBaseState
 						Enemy target = _target as Enemy;
 
 						Debug.Log($"{_caster.UnitName} used {_currentSkill.SkillName} on teammates. All enemies gained {_currentSkill.SkillName} for {target.AttackBuffCount} turn.");
+						state.CombatLogText.SetText($"{_caster.UnitName} used {_currentSkill.SkillName} on teammates. All enemies gained {_currentSkill.SkillName} for {target.AttackBuffCount} turn.");
 					}
 
 					_recentlyCastAttackBuff = true;
@@ -355,6 +359,7 @@ public class BattleSkillLogicApplicationState : BattleBaseState
 						Hero target = _target as Hero;
 
 						Debug.Log($"{_caster.UnitName} used {_currentSkill.SkillName} on teammates. All heroes gained {_currentSkill.SkillName} for {target.AttackBuffCount} turn.");
+						state.CombatLogText.SetText($"{_caster.UnitName} used {_currentSkill.SkillName} on teammates. All heroes gained {_currentSkill.SkillName} for {target.AttackBuffCount} turn.");
 					}
 					else if (_target is Enemy)
 					{
@@ -367,6 +372,7 @@ public class BattleSkillLogicApplicationState : BattleBaseState
 						Enemy target = _target as Enemy;
 
 						Debug.Log($"{_caster.UnitName} used {_currentSkill.SkillName} on teammates. All enemies gained {_currentSkill.SkillName} for {target.AttackBuffCount} turn.");
+						state.CombatLogText.SetText($"{_caster.UnitName} used {_currentSkill.SkillName} on teammates. All enemies gained {_currentSkill.SkillName} for {target.AttackBuffCount} turn.");
 					}
 
 					_recentlyCastDefenseBuff = true;
@@ -385,6 +391,7 @@ public class BattleSkillLogicApplicationState : BattleBaseState
 				_target.Heal(healValue);
 
 				Debug.Log($"{_caster.UnitName} used {_currentSkill.SkillName} on {_target.UnitName}. {_target.UnitName} healed {healValue} HP.");
+				state.CombatLogText.SetText($"{_caster.UnitName} used {_currentSkill.SkillName} on {_target.UnitName}. {_target.UnitName} healed {healValue} HP.");
 			}
 			else if (currentSkill.AoE != AoE.All)
 			{
@@ -397,6 +404,7 @@ public class BattleSkillLogicApplicationState : BattleBaseState
 						_heroesUnit[i].Heal(healValue);
 
 						Debug.Log($"{_heroesUnit[i]} healed {healValue} HP.");
+						state.CombatLogText.SetText($"{_heroesUnit[i]} healed {healValue} HP.");
 					}
 				}
 				else if (_target is Enemy)
@@ -407,6 +415,7 @@ public class BattleSkillLogicApplicationState : BattleBaseState
 						_enemiesUnit[i].Heal(healValue);
 
 						Debug.Log($"{_enemiesUnit[i]} healed {healValue} HP.");
+						state.CombatLogText.SetText($"{_enemiesUnit[i]} healed {healValue} HP.");
 					}
 				}
 			}
@@ -428,6 +437,8 @@ public class BattleSkillLogicApplicationState : BattleBaseState
 
 				Debug.Log($"Target: {_target.UnitName}; Target HP: {_target.CurrentHealth}");
 				Debug.Log($"{_caster.UnitName} used {_currentSkill.SkillName} on {_target.UnitName}. {_target.UnitName} received {calculatedDamage} damage.");
+				state.CombatLogText.SetText($"{_caster.UnitName} used {_currentSkill.SkillName} on {_target.UnitName}. {_target.UnitName} received {calculatedDamage} damage.\n" +
+					$"{_target.UnitName} remaining HP: {_target.CurrentHealth}");
 			}
 			else if (currentSkill.AoE == AoE.All)
 			{
@@ -447,6 +458,8 @@ public class BattleSkillLogicApplicationState : BattleBaseState
 
 						Debug.Log($"Target: {_heroesUnit[i].UnitName}; Target HP: {_heroesUnit[i].CurrentHealth}");
 						Debug.Log($"{_heroesUnit[i]} received {calculatedDamage} damage.");
+						state.CombatLogText.SetText($"{_heroesUnit[i]} received {calculatedDamage} damage.\n" +
+							$"{_heroesUnit[i].UnitName} remaining HP: {_heroesUnit[i].CurrentHealth}");
 					}
 
 					 //All enemies gained {_currentSkill.SkillName} for {_target.AttackBuffCount} turn.");
@@ -465,6 +478,8 @@ public class BattleSkillLogicApplicationState : BattleBaseState
 
 						Debug.Log($"Target: {_enemiesUnit[i].UnitName}; Target HP: {_enemiesUnit[i].CurrentHealth}");
 						Debug.Log($"{_enemiesUnit[i]} received {calculatedDamage} damage.");
+						state.CombatLogText.SetText($"{_enemiesUnit[i]} received {calculatedDamage} damage.\n" +
+							$"{_enemiesUnit[i].UnitName} remaining HP: {_enemiesUnit[i].CurrentHealth}");
 					}
 				}
 			}
@@ -498,6 +513,9 @@ public class BattleSkillLogicApplicationState : BattleBaseState
 
 			Debug.Log($"{_target.UnitName} received {calculatedDamage}.");
 			Debug.Log($"Target: {_target.UnitName}; Target HP after hit: {_target.CurrentHealth}");
+			state.CombatLogText.SetText($"{_target.UnitName} received {calculatedDamage}.\n" +
+				$"{_target.UnitName} remaining HP: {_target.CurrentHealth}");
+
 		}
 		else if (_currentSkill is SkillMagical)
 		{
@@ -517,6 +535,8 @@ public class BattleSkillLogicApplicationState : BattleBaseState
 
 				Debug.Log($"{_caster.UnitName} used {_currentSkill.SkillName} on {_target.UnitName}. {_target.UnitName} received {calculatedDamage} damage.");
 				Debug.Log($"Target: {_target.UnitName}; Target HP after hit: {_target.CurrentHealth}");
+				state.CombatLogText.SetText($"{_caster.UnitName} used {_currentSkill.SkillName} on {_target.UnitName}. {_target.UnitName} received {calculatedDamage} damage.\n" +
+					$"{_target.UnitName} remaining HP: {_target.CurrentHealth}");
 			}
 			else if (currentSkill.AoE == AoE.All)
 			{
@@ -535,6 +555,8 @@ public class BattleSkillLogicApplicationState : BattleBaseState
 
 						Debug.Log($"Target: {_heroesUnit[i].UnitName}; Target HP: {_heroesUnit[i].CurrentHealth}");
 						Debug.Log($"{_heroesUnit[i]} received {calculatedDamage} damage.");
+						state.CombatLogText.SetText($"{_heroesUnit[i]} received {calculatedDamage} damage.\n" +
+							$"{_heroesUnit[i].UnitName} remaining HP: {_heroesUnit[i].CurrentHealth}");
 					}
 				}
 				else
@@ -552,6 +574,8 @@ public class BattleSkillLogicApplicationState : BattleBaseState
 
 						Debug.Log($"Target: {_enemiesUnit[i].UnitName}; Target HP: {_enemiesUnit[i].CurrentHealth}");
 						Debug.Log($"{_enemiesUnit[i]} received {calculatedDamage} damage.");
+						state.CombatLogText.SetText($"{_enemiesUnit[i]} received {calculatedDamage} damage.\n" + 
+							$"{_enemiesUnit[i].UnitName} remaining HP: {_enemiesUnit[i].CurrentHealth}");
 					}
 				}
 			}
@@ -591,6 +615,7 @@ public class BattleSkillLogicApplicationState : BattleBaseState
 			{
 				_caster.DefenseBuffCount--;
 				Debug.Log($"{_caster.UnitName}'s remaining turn of Defense Buff: {_caster.DefenseBuffCount}");
+				state.CombatLogText.SetText($"{_caster.UnitName}'s remaining turn of Defense Buff: {_caster.DefenseBuffCount}");
 			}
 		}
 		if (_caster.AttackBuffCount > 0)
@@ -603,6 +628,7 @@ public class BattleSkillLogicApplicationState : BattleBaseState
 			{
 				_caster.AttackBuffCount--;
 				Debug.Log($"{_caster.UnitName}'s remaining turn of Attack Buff: {_caster.AttackBuffCount}");
+				state.CombatLogText.SetText($"{_caster.UnitName}'s remaining turn of Attack Buff: {_caster.AttackBuffCount}");
 			}
 		}
 

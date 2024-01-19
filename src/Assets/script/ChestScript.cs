@@ -29,22 +29,23 @@ public class ChestScript : MonoBehaviour
             {
                 ItemMethod.AddItem(new ChestData().ChestDefaultList[ChestId].itemReward);
                 notificationText = "Get " + ChestInfo.itemReward[0].name + " X " + ChestInfo.itemReward.Count;
-                setNotication(notificationText);
+                setNotication(notification, notificationText);
             }
             else
             {
                 ItemMethod.AddGold(ChestInfo.goldReward);
                 notificationText = "Get " + ChestInfo.goldReward + " gold";
-                setNotication(notificationText);
+                setNotication(notification, notificationText);
             }
         }
         gameObject.SetActive(false);
     }
-
-    private async void setNotication(string information)
+	private async void setNotication(TextMeshProUGUI notify, string information)
     {
-        notification.text = information;
+        Debug.Log($"information: {information}");
+        Debug.Log($"notification: {notification}");
+		notify.SetText(information);
         await Task.Delay(1000);
-        notification.text = "";
+		notify.SetText("");
     }
 }

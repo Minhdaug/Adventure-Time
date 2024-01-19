@@ -19,12 +19,12 @@ namespace Assets.script.defaultData
             new List<string>() {"Bat", "Bat", "Slime"}, //6
             new List<string>() {"Bat", "Bat", "Bat"}, //7
             new List<string>() {"Bat", "Bat", "Bat", "Bar"}, //8
-            new List<string>() {"Golin", "Bat", "Slime"}, //9
-            new List<string>() {"Golin", "Bat", "Bat"}, //10
-            new List<string>() {"Golin", "Goblin", "Goblin"}, //11
-            new List<string>() {"Golin", "Goblin", "Goblin", "Goblin"}, //12
-            new List<string>() {"Golin", "Goblin", "Skeleton"}, //13
-            new List<string>() {"Golin", "Goblin", "Goblin", "Skeleton"}, //14
+            new List<string>() {"Goblin", "Bat", "Slime"}, //9
+            new List<string>() {"Goblin", "Bat", "Bat"}, //10
+            new List<string>() {"Goblin", "Goblin", "Goblin"}, //11
+            new List<string>() {"Goblin", "Goblin", "Goblin", "Goblin"}, //12
+            new List<string>() {"Goblin", "Goblin", "Skeleton"}, //13
+            new List<string>() {"Goblin", "Goblin", "Goblin", "Skeleton"}, //14
             new List<string>() {"GolemBoss"}, //15
             new List<string>() { "HeraldOfDeath" }, //16
             new List<string>() { "GrimReaper" }, //17

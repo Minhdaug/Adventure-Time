@@ -3,6 +3,7 @@ using Assets.script.services;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Windows;
@@ -18,6 +19,12 @@ public class BattleStateManager : MonoBehaviour
     public BattlePlayerTurnState currentPlayerTurnState = new BattlePlayerTurnState();
     public BattleAnimationState currentAnimationState = new BattleAnimationState();
     private SkillsManager _skillManager;
+	[SerializeField] TextMeshProUGUI _combatLogText;
+	public TextMeshProUGUI CombatLogText
+	{
+		get { return _combatLogText; }
+		set { _combatLogText = value; }
+	}
 
 	public class CharacterCombatData 
 	{
@@ -184,7 +191,7 @@ public class BattleStateManager : MonoBehaviour
 	{
 		string path = Application.persistentDataPath;
 
-		Debug.Log(path);
+		//Debug.Log(path);
 		var files = System.IO.Directory.GetFiles(path);
 		string filePath = path + "\\combatData.json";
 
@@ -201,11 +208,14 @@ public class BattleStateManager : MonoBehaviour
 					{
 						foreach (KeyValuePair<string, int> kvp in charCombatData.characterLvl)
 						{
-							Debug.Log($"kvp.Key: {kvp.Key}");
+							//Debug.Log($"kvp.Key: {kvp.Key}");
 
 							foreach (GameObject itemGO in _heroesGO)
 							{
-								Unit itemUnit = itemGO.GetComponent<Unit>();
+								Hero itemUnit = itemGO.GetComponent<Unit>() as Hero;
+								
+								// Set Hero current level.
+								//itemUnit.CurrentLevel = kvp.Value;
 
 								if (itemUnit.UnitName == kvp.Key)
 								{
@@ -218,12 +228,12 @@ public class BattleStateManager : MonoBehaviour
 							//	Debug.Log($"go: {go.GetComponent<Unit>().UnitName}");
 							//}
 
-							Debug.Log($"kvp.Value: {kvp.Value}");
+							//Debug.Log($"kvp.Value: {kvp.Value}");
 						}
 
 						foreach (string enemyName in charCombatData.enemiesInAct)
 						{
-							Debug.Log($"enemyName: {enemyName}");
+							//Debug.Log($"enemyName: {enemyName}");
 
 							foreach (GameObject itemGO in _enemiesGO)
 							{
